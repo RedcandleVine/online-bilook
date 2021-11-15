@@ -1,0 +1,35 @@
+.timing-info {
+  padding: 40px 30px;
+  border: 1px solid #DEDEDE;
+  border-radius: 10px;
+  
+  &__item {
+    display: flex;
+    margin-bottom: 20px;
+    
+    &:last-child {
+       margin-bottom: 0;
+    }
+    
+    & svg {
+      width: 30px;
+      height: 30px;
+      margin-right: 20px;
+      fill: $pink;
+    }
+  }
+  
+  
+  &__title {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 35px;
+    color: $dark;
+  }
+  
+  &__descr {
+    font-size: 14px;
+    line-height: 20px;
+    color: $dark;
+  }
+}

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    @include("templates/head.html")
+    <title>Концерт карточка - Bilook</title>
+</head>
+
+<body>
+    <div class="full">
+        @include("templates/header-inner.html")
+        <main class="page-main">
+            <div class="content-block">
+                @include("templates/left-sidebar.html")
+                <div class="center-content">
+                    <div class="breadcrumbs">
+                        <ul class="breadcrumbs-list">
+                            <li class="breadcrumbs-list__item"><a href="#">Главная</a>
+                            </li>
+                            <li class="breadcrumbs-list__item"><span>Личный кабинет</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="light-wrapper">
+                        <div class="inner-block">
+                            <div class="inner-title">
+                                Личный кабинет
+                            </div>
+                            <div class="personal-card">
+                                <div class="personal-card__item">
+                                    <div class="avatar avatar--big">
+                                        <img src="img/man.png" alt="">
+                                        <svg>
+                                            <circle class="outer" cx="65" cy="125" r="100" transform="rotate(-90, 95, 95)"></circle>
+                                            <defs>
+                                                <linearGradient id="grad2" x1="9.85452" y1="26.7208" x2="23.2808" y2="7.2656" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#DF0E77" />
+                                                    <stop offset="1" stop-color="#390796" />
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="personal-card__item">
+                                    <div class="personal-card__table" data-adaptiv="personal-card__item:nth-child(3), 0, 1400">
+                                        <div class="personal-card__table-row">
+                                            <div class="personal-card__table-name">
+                                                <span>Иван Иванов</span>
+                                            </div>
+                                        </div>
+                                        <div class="personal-card__table-row">
+                                            <div class="personal-card__table-stat">
+                                                <div class="stat">
+                                                    <a class="stat__item" href="#">
+                                                        <span class="stat__number">15</span>  <span>избранных</span>
+                                                    </a>
+                                                    <a class="stat__item" href="#">
+                                                        <span class="stat__number">23</span>  <span>посещения мероприятий</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="personal-card__table-row">
+                                            <div class="personal-card__data">
+                                                <span>Возраст:</span> 25
+                                            </div>
+                                        </div>
+                                        <div class="personal-card__table-row">
+                                            <div class="personal-card__data">
+                                                <span>Зарегистрирован:</span> 20 августа 2019
+                                            </div>
+                                        </div>
+                                        <div class="personal-card__table-row">
+                                            <a class="btn-border btn-border--white" href="#">
+                                                <span>Настроить</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="personal-card__item">
+                                    @include("templates/progress.html")
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inner-block">
+                        <ul class="sort-list">
+                            <li class="sort-list__item">
+                                <select style="display: none;">
+                                    <option>Дата</option>
+                                    <option>Сначала новые</option>
+                                    <option>Сначала старые</option>
+                                </select>
+                                <div class="nice-select" tabindex="0"><span class="current">Дата</span>
+                                    <ul class="list">
+                                        <li data-value="Дата" class="option selected">Дата</li>
+                                        <li data-value="Сначала новые" class="option">Сначала новые</li>
+                                        <li data-value="Сначала старые" class="option">Сначала старые</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="sort-list__item">
+                                <select style="display: none;">
+                                    <option>Место</option>
+                                    <option>Центр</option>
+                                    <option>Запад</option>
+                                </select>
+                                <div class="nice-select" tabindex="0"><span class="current">Место</span>
+                                    <ul class="list">
+                                        <li data-value="Место" class="option selected">Место</li>
+                                        <li data-value="Центр" class="option">Центр</li>
+                                        <li data-value="Запад" class="option">Запад</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="sort-list__item">
+                                <select style="display: none;">
+                                    <option>Жанр</option>
+                                    <option>Комедия</option>
+                                    <option>Детективы</option>
+                                </select>
+                                <div class="nice-select" tabindex="0"><span class="current">Жанр</span>
+                                    <ul class="list">
+                                        <li data-value="Жанр" class="option selected">Жанр</li>
+                                        <li data-value="Комедия" class="option">Комедия</li>
+                                        <li data-value="Детективы" class="option">Детективы</li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="inner-title">
+                            Календарь событий
+                        </div>
+                        <div class="card-list">
+                            <div class="card-list__item">
+                                <div class="concerts-card">
+                                    <a href="#"></a>
+                                    <div class="concerts-card__img">
+                                        <img src="img/con1.png" alt="">
+                                        <div class="concerts-card__price">от 1000 ₽</div>
+                                    </div>
+                                    <div class="concerts-card__info">
+                                        <div class="concerts-card__title">Green Day</div>
+                                        <div class="concerts-card__dop-info">
+                                            <div class="concerts-card__place">
+                                                Стадион "Открытие арена"
+                                            </div>
+                                            <div class="concerts-card__date">
+                                                28 мая, 20:00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-list__item">
+                                <div class="concerts-card">
+                                    <a href="#"></a>
+                                    <div class="concerts-card__img">
+                                        <img src="img/con2.png" alt="">
+                                        <div class="concerts-card__price">от 1000 ₽</div>
+                                    </div>
+                                    <div class="concerts-card__info">
+                                        <div class="concerts-card__title">Green Day</div>
+                                        <div class="concerts-card__dop-info">
+                                            <div class="concerts-card__place">
+                                                Стадион "Открытие арена"
+                                            </div>
+                                            <div class="concerts-card__date">
+                                                28 мая, 20:00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-list__item">
+                                <div class="concerts-card">
+                                    <a href="#"></a>
+                                    <div class="concerts-card__img">
+                                        <img src="img/con3.png" alt="">
+                                        <div class="concerts-card__price">от 1000 ₽</div>
+                                    </div>
+                                    <div class="concerts-card__info">
+                                        <div class="concerts-card__title">Green Day</div>
+                                        <div class="concerts-card__dop-info">
+                                            <div class="concerts-card__place">
+                                                Стадион "Открытие арена"
+                                            </div>
+                                            <div class="concerts-card__date">
+                                                28 мая, 20:00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-list__item">
+                                <div class="concerts-card">
+                                    <a href="#"></a>
+                                    <div class="concerts-card__img">
+                                        <img src="img/con4.png" alt="">
+                                        <div class="concerts-card__price">от 1000 ₽</div>
+                                    </div>
+                                    <div class="concerts-card__info">
+                                        <div class="concerts-card__title">Green Day</div>
+                                        <div class="concerts-card__dop-info">
+                                            <div class="concerts-card__place">
+                                                Стадион "Открытие арена"
+                                            </div>
+                                            <div class="concerts-card__date">
+                                                28 мая, 20:00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inner-block">
+                        <div class="title-block">
+                            <div class="title-block__item">
+                                <div class="inner-title">
+                                    Избранное
+                                </div>
+                            </div>
+                            <div class="title-block__item">
+                                <a class="btn-border btn-border--light" href="#">
+                                    <span>Смотреть все</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-list">
+                            <div class="card-list__item">
+                                <div class="concerts-card">
+                                    <a href="#"></a>
+                                    <div class="concerts-card__img">
+                                        <img src="img/con1.png" alt="">
+                                        <div class="concerts-card__price">от 1000 ₽</div>
+                                    </div>
+                                    <div class="concerts-card__info">
+                                        <div class="concerts-card__title">Green Day</div>
+                                        <div class="concerts-card__dop-info">
+                                            <div class="concerts-card__place">
+                                                Стадион "Открытие арена"
+                                            </div>
+                                            <div class="concerts-card__date">
+                                                28 мая, 20:00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-list__item">
+                                <div class="concerts-card">
+                                    <a href="#"></a>
+                                    <div class="concerts-card__img">
+                                        <img src="img/con2.png" alt="">
+                                        <div class="concerts-card__price">от 1000 ₽</div>
+                                    </div>
+                                    <div class="concerts-card__info">
+                                        <div class="concerts-card__title">Green Day</div>
+                                        <div class="concerts-card__dop-info">
+                                            <div class="concerts-card__place">
+                                                Стадион "Открытие арена"
+                                            </div>
+                                            <div class="concerts-card__date">
+                                                28 мая, 20:00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-list__item">
+                                <div class="concerts-card">
+                                    <a href="#"></a>
+                                    <div class="concerts-card__img">
+                                        <img src="img/con3.png" alt="">
+                                        <div class="concerts-card__price">от 1000 ₽</div>
+                                    </div>
+                                    <div class="concerts-card__info">
+                                        <div class="concerts-card__title">Green Day</div>
+                                        <div class="concerts-card__dop-info">
+                                            <div class="concerts-card__place">
+                                                Стадион "Открытие арена"
+                                            </div>
+                                            <div class="concerts-card__date">
+                                                28 мая, 20:00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-list__item">
+                                <div class="concerts-card">
+                                    <a href="#"></a>
+                                    <div class="concerts-card__img">
+                                        <img src="img/con4.png" alt="">
+                                        <div class="concerts-card__price">от 1000 ₽</div>
+                                    </div>
+                                    <div class="concerts-card__info">
+                                        <div class="concerts-card__title">Green Day</div>
+                                        <div class="concerts-card__dop-info">
+                                            <div class="concerts-card__place">
+                                                Стадион "Открытие арена"
+                                            </div>
+                                            <div class="concerts-card__date">
+                                                28 мая, 20:00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inner-block">
+                        <div class="title-block">
+                            <div class="title-block__item">
+                                <div class="inner-title">
+                                    Мои билеты
+                                </div>
+                            </div>
+                            <div class="title-block__item">
+                                <a class="btn-border btn-border--light" href="#">
+                                    <span>Смотреть все</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="card-list">
+                            <div class="card-list__item">
+                                <div class="concerts-card">
+                                    <a href="#"></a>
+                                    <div class="concerts-card__img">
+                                        <img src="img/con1.png" alt="">
+                                        <div class="concerts-card__price">от 1000 ₽</div>
+                                    </div>
+                                    <div class="concerts-card__info">
+                                        <div class="concerts-card__title">Green Day</div>
+                                        <div class="concerts-card__dop-info">
+                                            <div class="concerts-card__place">
+                                                Стадион "Открытие арена"
+                                            </div>
+                                            <div class="concerts-card__date">
+                                                28 мая, 20:00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-list__item">
+                                <div class="concerts-card">
+                                    <a href="#"></a>
+                                    <div class="concerts-card__img">
+                                        <img src="img/con2.png" alt="">
+                                        <div class="concerts-card__price">от 1000 ₽</div>
+                                    </div>
+                                    <div class="concerts-card__info">
+                                        <div class="concerts-card__title">Green Day</div>
+                                        <div class="concerts-card__dop-info">
+                                            <div class="concerts-card__place">
+                                                Стадион "Открытие арена"
+                                            </div>
+                                            <div class="concerts-card__date">
+                                                28 мая, 20:00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-list__item">
+                                <div class="concerts-card">
+                                    <a href="#"></a>
+                                    <div class="concerts-card__img">
+                                        <img src="img/con3.png" alt="">
+                                        <div class="concerts-card__price">от 1000 ₽</div>
+                                    </div>
+                                    <div class="concerts-card__info">
+                                        <div class="concerts-card__title">Green Day</div>
+                                        <div class="concerts-card__dop-info">
+                                            <div class="concerts-card__place">
+                                                Стадион "Открытие арена"
+                                            </div>
+                                            <div class="concerts-card__date">
+                                                28 мая, 20:00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-list__item">
+                                <div class="concerts-card">
+                                    <a href="#"></a>
+                                    <div class="concerts-card__img">
+                                        <img src="img/con4.png" alt="">
+                                        <div class="concerts-card__price">от 1000 ₽</div>
+                                    </div>
+                                    <div class="concerts-card__info">
+                                        <div class="concerts-card__title">Green Day</div>
+                                        <div class="concerts-card__dop-info">
+                                            <div class="concerts-card__place">
+                                                Стадион "Открытие арена"
+                                            </div>
+                                            <div class="concerts-card__date">
+                                                28 мая, 20:00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inner-block">
+                        @include("templates/review.html")
+                    </div>
+                    @include("templates/set.html")
+                </div>
+                @include("templates/right-sidebar.html")
+            </div>
+        </main>
+        @include("templates/footer.html")
+        @include("templates/mmenu.html")
+    </div>
+    @include("templates/overlay.html")
+    @include("templates/regions.html")
+    @include("templates/form-reg.html")
+    @include("templates/scripts.html")
+</body>
+
+</html>

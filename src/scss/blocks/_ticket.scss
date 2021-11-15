@@ -1,0 +1,52 @@
+.ticket {
+  padding: 20px 0;
+  background-color: #F8F8F8;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    &-item {
+      width: 24%;
+      list-style-type: none;
+    }
+    
+    &-btn {
+      text-align: center;
+      background-color: $white;
+      border: 1px solid #E8E8E8;
+      border-radius: 100px;
+      text-transform: uppercase;
+      transition: all 0.3s ease;
+      &:hover {
+        border-color: $pink;
+      }
+      
+      a {
+        display: block;
+        padding: 28px 20px;
+        font-family: $MBoldFont;
+        font-size: 14px;
+        color: $dark;
+        
+        &:hover {
+          color: $pink;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 1200px) {
+  .ticket {
+    padding: 20px 15px;
+  }
+}
+
+@media(max-width: 800px) {
+  .ticket__list-item {
+    width: 48%;
+    margin-bottom: 20px;
+  }
+}

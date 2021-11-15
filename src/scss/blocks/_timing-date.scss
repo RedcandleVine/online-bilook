@@ -1,0 +1,30 @@
+.timing-date {
+  display: flex;
+
+  
+   &__item {
+     margin-right: 10px;
+     
+     &-number {
+       font-size: 48px;
+      line-height: 35px;
+      color: $dark;
+
+     }
+      
+      &-day {
+        font-size: 12px;
+        line-height: 12px;
+        color: $middle-grey;
+        text-transform: uppercase;
+      }
+      
+      &-month {
+        font-family: $MBoldFont;
+        font-size: 16px;
+        line-height: 35px;
+        color: $dark;
+      }
+      
+    }
+}

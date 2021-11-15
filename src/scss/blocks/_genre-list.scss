@@ -1,0 +1,35 @@
+.genre-list {
+  display: flex;
+  flex-wrap: wrap;
+  
+  &__item {
+    position: relative;
+    margin: 0 20px;
+    list-style-type: none;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: -23px;
+      width: 4px;
+      height: 4px;
+      background-color: $violet;
+      border-radius: 100%;
+    }
+    
+    &:nth-child(1)::before {
+      content: none;
+    }
+    
+    
+    & a {
+      position: relative;
+      color: $pink;
+      &:hover {
+  text-decoration: underline;
+      }
+    
+    }
+  }
+}

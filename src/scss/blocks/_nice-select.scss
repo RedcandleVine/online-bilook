@@ -1,0 +1,28 @@
+.nice-select {
+    padding-right: 85px;
+    background-color: #F0F0F0;
+    border-radius: 10px;
+    border: none;
+}
+.nice-select:after {
+    border-bottom: 2px solid $pink;
+    border-right: 2px solid $pink;
+}
+.nice-select.select-light {
+    width: 100%;
+    height: auto;
+    min-height: 70px;
+    padding: 15px 40px;
+    color: #9C9C9C;
+    background-color: transparent;
+    border: 1px solid #F8F8F8;
+    border-radius: 100px;
+}
+
+.nice-select:after {
+    right: 30px;
+}
+
+.nice-select.select-light .list {
+  width: 100%;
+}

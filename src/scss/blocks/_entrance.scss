@@ -1,0 +1,37 @@
+.entrance {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000000;
+    cursor: pointer;
+    &__avatar {
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
+        fill: $pink;
+        transition: transform 0.3s ease;
+    }
+    &__arrow {
+        width: 10px;
+        height: 10px;
+        margin-left: 10px;
+        fill: $pink;
+        transition: transform 0.3s ease;
+    }
+    .open & {
+        .entrance__arrow {
+            transform: rotate(-180deg);
+        }
+    }
+    &.authorized span,
+    &.authorized & .entrance__arrow {
+        display: none;
+    }
+
+  &.authorized & .entrance__avatar {
+    margin-right: 0;
+  }
+}

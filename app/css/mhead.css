@@ -1,0 +1,24 @@
+/*!
+ * mhead.js
+ * mmenu.frebsite.nl/mhead
+ *
+ * Copyright (c) Fred Heusschen
+ * www.frebsite.nl
+ *
+ * License: CC-BY-4.0
+ * http://creativecommons.org/licenses/by/4.0/
+ */
+.mh-sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  transition: transform .2s ease;
+  transform: translate3d(0, 0, 0);
+}
+
+.mh-sticky.mh-unpinned {
+  transform: translate3d(0, -100%, 0);
+}
+
+/*# sourceMappingURL=mhead.css.map */

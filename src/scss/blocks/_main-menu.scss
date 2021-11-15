@@ -1,0 +1,46 @@
+.main-menu {
+  &__item {
+    padding-left: 40px;
+    border-bottom: 1px solid #F5F5F5;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &:hover {
+      background-color: $pink;
+    }
+  }
+
+  & a {
+    position: relative;
+    display: block;
+    padding: 30px 0;
+    padding-left: 38px;
+    font-family: $MBoldFont;
+    font-size: 14px;
+    color: $dark;
+    text-transform: uppercase;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 32px;
+      left: 10px;
+      width: 10px;
+      height: 10px;
+      background-color: #D95C9B;
+      border-radius: 100%;
+    }
+
+    &:hover::before  {
+      background-color: $white;
+    }
+  }
+}
+
+@media(max-width: 1300px) {
+  .main-menu__item {
+    padding-left: 20px;
+  }
+}

@@ -1,0 +1,8 @@
+.left-sidebar {
+    grid-column: span 4;
+    background-color: $white;
+    border-radius: 0 10px 10px 0;
+    @media(max-width: 1200px) {
+        display: none;
+    }
+}

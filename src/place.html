@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    @include("templates/head.html")
+    <title>Концерт карточка - Bilook</title>
+</head>
+
+<body>
+    <div class="full">
+        @include("templates/header-inner.html")
+        <main class="page-main">
+            <div class="content-block">
+                @include("templates/left-sidebar.html")
+                <div class="center-content">
+                    <div class="breadcrumbs">
+                        <ul class="breadcrumbs-list">
+                            <li class="breadcrumbs-list__item"><a href="#">Главная</a>
+                            </li>
+                            <li class="breadcrumbs-list__item"><span>Концерты</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="inner-block">
+                        <div class="inner-title">
+                            Большой театр
+                        </div>
+                        @include("templates/address.html")
+                    </div>
+                    <div class="social-wrapper">
+                        <div class="social-wrapper__text">
+                            Пригласите друзей, вместе веселее.
+                        </div>
+                        <ul class="social-list">
+                            <li class="social-list__item">
+                                <a class="social-list__icon social-list__icon--tw" href="#" aria-label="Твиттер" target="_blank"></a>
+                            </li>
+                            <li class="social-list__item">
+                                <a class="social-list__icon social-list__icon--fb" href="#" aria-label="Фейсбук" target="_blank"></a>
+                            </li>
+                            <li class="social-list__item">
+                                <a class="social-list__icon social-list__icon--vk" href="#" aria-label="Вконтакте" target="_blank"></a>
+                            </li>
+                            <li class="social-list__item">
+                                <a class="social-list__icon social-list__icon--inst" href="#" aria-label="Инстаграм" target="_blank"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="inner-block">
+                        <article class="article text text--light">
+                            <p>
+                                За последние несколько лет была реконструирована основная сцена, театр начал заказывать музыку современным композиторам, а к некогда скандальным «Детям Розенталя» Някрошюса по Сорокину добавилась целая обойма провокационных и остроактуальных работ Серебренникова и Чернякова. Традиционный репертуар балетной труппы обновился постановками классики ХХ века, выпущенными хореографом Алексеем Ратманским, который, впрочем, в 2008 году демонстративно покинул Россию навсегда. В новостные топы же главный и самый богатый театр страны чаще попадает благодаря скандалам, нежели спектаклям.</p>
+                            <a class="btn-border btn-border--light" href="#">
+                                <span>Читать далее</span>
+                            </a>
+                        </article>
+                    </div>
+                    @include("templates/slider-gallery.html")
+                    <section class="section">
+                        <div class="title-block">
+                            <div class="title-block__item">
+                                <div class="inner-title">
+                                    Расписание спектаклей
+                                </div>
+                            </div>
+                            <div class="title-block__item">
+                                <ul class="sort-list">
+                                    <li class="sort-list__item">
+                                        <select style="display: none;">
+                                            <option>Дата</option>
+                                            <option>Сначала новые</option>
+                                            <option>Сначала старые</option>
+                                        </select>
+                                        <div class="nice-select" tabindex="0"><span class="current">Дата</span>
+                                            <ul class="list">
+                                                <li data-value="Дата" class="option selected">Дата</li>
+                                                <li data-value="Сначала новые" class="option">Сначала новые</li>
+                                                <li data-value="Сначала старые" class="option">Сначала старые</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="sort-list__item">
+                                        <select style="display: none;">
+                                            <option>Место</option>
+                                            <option>Центр</option>
+                                            <option>Запад</option>
+                                        </select>
+                                        <div class="nice-select" tabindex="0"><span class="current">Место</span>
+                                            <ul class="list">
+                                                <li data-value="Место" class="option selected">Место</li>
+                                                <li data-value="Центр" class="option">Центр</li>
+                                                <li data-value="Запад" class="option">Запад</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="sort-list__item">
+                                        <select style="display: none;">
+                                            <option>Жанр</option>
+                                            <option>Комедия</option>
+                                            <option>Детективы</option>
+                                        </select>
+                                        <div class="nice-select" tabindex="0"><span class="current">Жанр</span>
+                                            <ul class="list">
+                                                <li data-value="Жанр" class="option selected">Жанр</li>
+                                                <li data-value="Комедия" class="option">Комедия</li>
+                                                <li data-value="Детективы" class="option">Детективы</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card-list">
+                            <div class="card-list__item">
+                                <div class="concerts-card">
+                                    <a href="#"></a>
+                                    <div class="concerts-card__img">
+                                        <img src="img/con1.png" alt="">
+                                        <div class="concerts-card__price">от 1000 ₽</div>
+                                    </div>
+                                    <div class="concerts-card__info">
+                                        <div class="concerts-card__title">Green Day</div>
+                                        <div class="concerts-card__dop-info">
+                                            <div class="concerts-card__place">
+                                                Стадион "Открытие арена"
+                                            </div>
+                                            <div class="concerts-card__date">
+                                                28 мая, 20:00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-list__item">
+                                <div class="concerts-card">
+                                    <a href="#"></a>
+                                    <div class="concerts-card__img">
+                                        <img src="img/con2.png" alt="">
+                                        <div class="concerts-card__price">от 1000 ₽</div>
+                                    </div>
+                                    <div class="concerts-card__info">
+                                        <div class="concerts-card__title">Green Day</div>
+                                        <div class="concerts-card__dop-info">
+                                            <div class="concerts-card__place">
+                                                Стадион "Открытие арена"
+                                            </div>
+                                            <div class="concerts-card__date">
+                                                28 мая, 20:00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-list__item">
+                                <div class="concerts-card">
+                                    <a href="#"></a>
+                                    <div class="concerts-card__img">
+                                        <img src="img/con3.png" alt="">
+                                        <div class="concerts-card__price">от 1000 ₽</div>
+                                    </div>
+                                    <div class="concerts-card__info">
+                                        <div class="concerts-card__title">Green Day</div>
+                                        <div class="concerts-card__dop-info">
+                                            <div class="concerts-card__place">
+                                                Стадион "Открытие арена"
+                                            </div>
+                                            <div class="concerts-card__date">
+                                                28 мая, 20:00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-list__item">
+                                <div class="concerts-card">
+                                    <a href="#"></a>
+                                    <div class="concerts-card__img">
+                                        <img src="img/con4.png" alt="">
+                                        <div class="concerts-card__price">от 1000 ₽</div>
+                                    </div>
+                                    <div class="concerts-card__info">
+                                        <div class="concerts-card__title">Green Day</div>
+                                        <div class="concerts-card__dop-info">
+                                            <div class="concerts-card__place">
+                                                Стадион "Открытие арена"
+                                            </div>
+                                            <div class="concerts-card__date">
+                                                28 мая, 20:00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="inner-block">
+                   @include("templates/review.html")
+                    </div>
+                    @include("templates/slider-seen.html")
+                </div>
+                @include("templates/right-sidebar.html")
+            </div>
+        </main>
+        @include("templates/footer.html")
+        @include("templates/mmenu.html")
+    </div>
+    @include("templates/overlay.html")
+    @include("templates/regions.html")
+    @include("templates/form-reg.html")
+    @include("templates/scripts.html")
+</body>
+</html>

@@ -1,0 +1,19 @@
+.payment-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 0;
+
+  &__item {
+    margin-right: 10px;
+    list-style-type: none;
+  }
+
+
+}
+
+@media(max-width: 600px) {
+   .page-footer__item .payment-list  {
+    justify-content: flex-start;
+  }
+}

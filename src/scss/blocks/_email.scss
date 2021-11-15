@@ -1,0 +1,23 @@
+.email {
+  margin-bottom: 20px;
+}
+
+.email svg {
+  width: 15px;
+  height: 15px;
+  fill: $white;
+}
+
+.email__link {
+  position: relative;
+  color: $white;
+  font-family: $MBoldFont;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  @media(max-width: 1320px) {
+    font-size: 12px;
+  }
+}

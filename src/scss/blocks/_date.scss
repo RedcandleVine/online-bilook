@@ -1,0 +1,33 @@
+.date {
+   display: flex;
+  align-items: center;
+  font-family: $MBoldFont;
+  font-size: 16px;
+  line-height: 22px;
+  color: $white;
+
+  & svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    fill: $pink;
+  }
+  
+  & span {
+    position: relative;
+    padding-left: 20px;
+    font-family: $MSemibold;
+    color: $pink;
+    
+    &::before {
+      content: "";
+    position: absolute;
+        top: 9px;
+    left: 8px;
+    width: 4px;
+    height: 4px;
+    background-color: #D95C9B;
+    border-radius: 100%;
+    }
+  }
+}

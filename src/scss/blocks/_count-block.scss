@@ -1,0 +1,122 @@
+.count-block {
+//  display: flex;
+//  flex-wrap: wrap;
+//  justify-content: space-between;
+//  width: 100%;
+//  max-width: 200px;
+//  margin: 0 auto;
+//  margin-bottom: 40px;
+//  background-color: $white;
+//  
+//  & span:nth-child(4) {
+//    display: none;
+//  }
+//  
+//  & figure {
+//    position: relative;
+//    display: flex;
+//    flex-wrap: wrap;
+//    justify-content: center;
+//    width: 40%!important;
+//    max-width: none!important;
+//    margin: 0;
+//    margin-bottom: 5px;
+//    padding: 20px 0;
+//    color: $pink;
+//    background: #F5F5F5;
+//    border-radius: 10px;
+//    
+//    & .first,
+//    & .first + div {
+//          width: 50%!important;
+//       margin-right: 0!important;
+//      overflow: hidden;
+//    }
+//  }
+//  
+//  & ul li {
+//    display: inline-block;
+//  }
+//  
+//  
+//  & figcaption {
+//    width: 100%;
+//    padding-right: 0!important;
+//    color: $dark;
+//    text-align: center;
+//  }
+}
+
+.timeTo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+   max-width: 200px;
+  font-family: $MMedium;
+  font-size: 28px;
+  line-height: 108%;
+  color: $pink;
+}
+
+.timeTo span {
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
+      margin-bottom: 5px;
+}
+
+  .timeTo span:nth-child(4) {
+    display: none;
+  }
+.timeTo figure {
+  position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 40%!important;
+    max-width: none!important;
+  margin: 0;
+   margin-bottom: 5px;
+  padding: 10px 5px;
+  color: $pink;
+  background: #F5F5F5;
+    border-radius: 10px;
+}
+
+.timeTo figure:last-child {
+  border-right: none; }
+
+.timeTo figcaption {
+  width: 100%;
+   margin: 0 auto;
+  padding-right: 0!important;
+  text-align: center;
+  font-size: 14px;
+  line-height: 17px;
+  color: $dark;
+  text-align: center; 
+}
+
+.timeTo div {
+  position: relative;
+  display: inline-block;
+  width: 25px;
+  height: 60px;
+  margin-right: 0!important;
+  overflow: hidden; }
+
+.timeTo ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto; }
+
+.timeTo ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  
+  text-align: center; }

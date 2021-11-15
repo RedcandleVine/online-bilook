@@ -1,0 +1,10 @@
+.right-sidebar {
+  grid-column: span 4;
+  background-color: $white;
+  border-radius: 10px 0 0 10px;
+
+  @media(max-width: 1200px) {
+    display: none;
+  }
+}
+

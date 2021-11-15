@@ -1,0 +1,38 @@
+.btn-border {
+    position: relative;
+    display: inline-block;
+    max-width: 235px;
+    padding: 2px;
+    font-size: 14px;
+    color: $white;
+    background: linear-gradient(97.22deg, #D95C9B 7.13%, #390796 95%);
+    background-size: 300% 300%;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 100px;
+    overflow: hidden;
+    transition: .6s;
+    cursor: pointer;
+    & span {
+        display: inline-block;
+        padding: 18px 38px;
+        color: $white;
+        background-color: $dark-grey;
+        border-radius: 100px;
+    }
+    &--light span {
+        color: $dark-grey;
+        background-color: #F8F8F8;
+    }
+    &--white span {
+        color: $dark-grey;
+        background-color: $white;
+    }
+    &:hover {
+        animation: animatedgradient 3s ease alternate;
+    }
+    .block-grey-wrapper & {
+        font-family: $MSemibold;
+        text-transform: none;
+    }
+}

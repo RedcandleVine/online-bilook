@@ -1,0 +1,20 @@
+.type {
+  display: flex;
+  align-items: center;
+}
+
+.type__svg {
+  width: 30px;
+  height: 30px;
+  margin: 10px 5px;
+  fill: #C4C4C4;
+  cursor: pointer;
+}
+
+.type__item.active svg {
+  fill: $pink;
+}
+
+.svg-grid {
+  height: 22px;
+}

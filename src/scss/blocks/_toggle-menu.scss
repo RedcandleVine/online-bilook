@@ -1,0 +1,88 @@
+.toggle-menu-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 6000;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    transform: translate(-78%, 0);
+    transition: transform 0.2s ease-in;
+}
+.toggle-menu-wrap.active {
+    transform: translate(0, 0);
+}
+.toggle-menu {
+    position: relative;
+    font-size: 13px;
+    color: $white;
+    text-transform: uppercase;
+    background-color: transparent;
+    transform-origin: 75px 75px;
+    transform: rotate(-90deg) translate(90%);
+
+    & span:nth-child(1) {
+        position: absolute;
+        top: -6px;
+        left: 40px;
+        display: block;
+        width: 46px;
+        height: 3px;
+        border-radius: 10px;
+        background: linear-gradient(246deg, #D95C9B 0.76%, #390796 99.1%);
+    }
+    &:hover span {
+        animation-name: animButtonMenu;
+        animation-timing-function: ease-in;
+        animation-iteration-count: infinite;
+    }
+    &:hover span:nth-child(2) {
+        animation-delay: 0.1s;
+    }
+    &:hover span:nth-child(3) {
+        animation-delay: 0.2s;
+    }
+    & span {
+        transition: all 0.3s ease;
+    }
+    & span:nth-child(2) {
+        position: absolute;
+        top: 7px;
+        left: 60px;
+        display: block;
+        width: 46px;
+        height: 3px;
+        border-radius: 10px;
+        background: linear-gradient(246deg, #D95C9B 0.76%, #390796 99.1%);
+    }
+    & span:nth-child(3) {
+        position: absolute;
+        top: 20px;
+        left: 30px;
+        display: block;
+        width: 46px;
+        height: 3px;
+        border-radius: 10px;
+        background: linear-gradient(246deg, #D95C9B 0.76%, #390796 99.1%);
+    }
+    .toggle-menu-wrap.fixed & {
+        font-weight: bold;
+        color: $pink;
+    }
+    &.open-menu {
+        & span:nth-child(1) {
+            transform: rotate(45deg) translate(4px, 14px);
+        }
+        & span:nth-child(2) {
+            opacity: 0;
+        }
+        & span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -14px);
+        }
+    }
+}
+@media(max-width: 1000px) {
+    .toggle-menu-wrap {
+        display: none;
+    }
+}

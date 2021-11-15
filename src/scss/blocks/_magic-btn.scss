@@ -1,0 +1,28 @@
+.magic-btn {
+  position: relative;
+  display:inline-block;
+  padding: 15px 20px;
+  border-radius: 100px;
+  background-color: $white;
+  cursor: pointer;
+    
+    &::after {
+   content: '';
+  position: absolute;
+  top: calc(-1 * 1px);
+  left: calc(-1 * 1px);
+  height: calc(100% + 1px * 2);
+  width: calc(100% + 1px * 2);
+  background: linear-gradient(97.22deg, #D95C9B 7.13%, #390796 95%);
+  border-radius: calc(2 * 1px);
+  z-index: -1;
+  background-size: 300% 300%;
+      border-radius: 100px;
+}
+
+  
+  &:hover::after {
+  animation: animatedgradient 3s ease alternate;
+  }
+
+}

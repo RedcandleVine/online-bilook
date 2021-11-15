@@ -1,0 +1,25 @@
+.link-more {
+   position: relative; 
+  font-family: $MSemibold;
+  font-size: 14px;
+  line-height: 35px;
+  color: $pink;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 13px;
+    right: -25px;
+    width: 15px;
+    height: 8px;
+    background-image: url("../../img/arrow-icon.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.3s ease;
+}
+  
+  &:hover::before {
+    transform: translateX(20%);
+  }
+}

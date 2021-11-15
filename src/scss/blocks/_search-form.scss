@@ -1,0 +1,43 @@
+.search-form {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 7px;
+}
+.submit {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  z-index: 1;
+  width: 60px;
+  height: 54px;
+  padding: 0 10px;
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease;
+
+  &:hover {
+    opacity: 0.7;
+  }
+  
+  &::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 9px;
+  display: block;
+  width: 35px;
+  height: 35px;
+  margin: 0 auto;
+  background-image: url("../../img/search-icon.png");
+  background-size: 27px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+}

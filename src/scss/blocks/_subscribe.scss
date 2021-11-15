@@ -1,0 +1,33 @@
+.subscribe {
+  width: 100%;
+  max-width: 375px;
+}
+
+.subscribe-form {
+  position: relative;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.subscribe-form__input {
+  width: 100%;
+  padding: 18px 33px;
+  border-radius: 100px;
+  border: none;
+}
+
+.subscribe-form__btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-transform: none;
+}
+
+.subscribe__text {
+  color: $white;
+}
+
+.subscribe__agreement {
+  color: $white;
+  font-size: 12px;
+}

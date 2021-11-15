@@ -1,0 +1,18 @@
+.perf-info-list {
+  width: 50%;
+
+  &__item {
+    position: relative;
+    display: inline;
+    list-style-type: none;
+
+    & a {
+      position: relative;
+      color: $pink;
+      &:hover {
+  text-decoration: underline;
+      }
+
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.singer-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 25px;
+  border: 1px solid #DEDEDE;  
+  border-radius: 10px;
+  
+  &__item {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    list-style-type: none;
+  }
+  
+}

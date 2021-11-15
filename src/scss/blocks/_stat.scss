@@ -1,0 +1,26 @@
+.stat {
+    display: flex;
+    flex-wrap: wrap;
+}
+.stat__item {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    margin-right: 15px;
+    &:hover {
+        color: $pink;
+    }
+}
+.stat__number {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    padding: 11px 0;
+    text-align: center;
+    border: 1px solid $pink;
+    border-radius: 100%;
+}
+.stat__item span {
+    display: inline-block;
+}

@@ -1,0 +1,15 @@
+.btn-grey {
+    display: inline-block;
+    padding: 18px 33px;
+    font-size: 14px;
+    color: $dark;
+    background: #F0F0F0;
+    text-transform: uppercase;
+    border-radius: 100px;
+    transition: .1s;
+    &:hover {
+        color: $white;
+        background-image: linear-gradient(302deg, #390796 42%, #d95c9b 83%);
+        background-size: 200%;
+    }
+}

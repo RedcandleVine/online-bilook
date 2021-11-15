@@ -1,0 +1,9 @@
+.date-another {
+  display: flex;
+  align-items: center;
+  color: $pink;
+  
+  &:hover {
+    color: $dark;
+  }
+}

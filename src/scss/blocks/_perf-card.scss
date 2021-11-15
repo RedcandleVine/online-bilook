@@ -1,0 +1,93 @@
+.perf-card {
+  position: relative;
+  margin-bottom: 20px;
+  padding: 30px;
+  background-color: $white;
+
+  &__counter {
+    position: absolute;
+    top: 0;
+    right: 32px;
+  }
+
+  &__title {
+    width: 70%;
+  }
+
+  &__info {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &-item {
+      width: 62%;
+
+      &:nth-child(1) {
+        width: 35%;
+      }
+
+      & img {
+        position: sticky;
+        top: 0;
+      }
+    }
+  }
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px 0;
+    border-top: 1px solid #F5F5F5;
+
+    &:nth-child(1) {
+      border-top: none;
+    }
+
+    &-item {
+      margin: 5px 0;
+      margin-right: 20px;
+    }
+
+
+    &-text {
+      width: 100%;
+      font-family: $MBoldFont;
+      font-size: 14px;
+      line-height: 20px;
+      color: $dark;
+    }
+  }
+
+
+  //  &__item:nth-child(1) {
+  //        grid-column: span 2;
+  //}
+  //
+  //    &__item:nth-child(2) {
+  //        grid-row: span 2;
+  //}
+  //
+  //     &__item:nth-child(3) {
+  //        grid-column: span 1;
+  //    grid-row: span 2;
+  //}
+
+
+}
+
+@media(max-width: 1000px) {
+  .perf-card__title {
+    width: 100%;
+  }
+
+  .perf-card__info-item:nth-child(1) {
+    width: 100%;
+  }
+
+  .perf-card__info-item {
+    width: 100%;
+  }
+}

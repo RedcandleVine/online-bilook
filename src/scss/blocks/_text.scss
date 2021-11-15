@@ -1,0 +1,24 @@
+.text-wrapper {
+  padding: 40px 30px;
+  background-color: $white;
+  border-radius: 10px;
+}
+
+.text {
+  margin-bottom: 20px;
+
+  & .btn-border {
+    font-family: $MSemibold;
+    text-transform: none;
+  }
+}
+
+.text--light {
+  padding: 40px 0;
+  background-color: transparent;
+}
+
+.perf-card .text {
+  padding: 20px 0;
+  padding-top: 0;
+}

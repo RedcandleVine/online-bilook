@@ -1,0 +1,19 @@
+.slide-menu {
+  width: 370px;
+  margin-right: 30px;
+  padding-right: 15px;
+  background: linear-gradient(179.84deg, #D95C9B 0.76%, #390796 99.1%);
+  border-radius: 0 10px 10px 0;
+  z-index: 1;
+  animation: gradientBG 15s ease infinite;
+  -webkit-animation: gradientBG 15s ease infinite;
+}
+
+@media(max-width: 1000px) {
+  .slide-menu {
+    width: 100%;
+    margin-right: 0;
+    padding-right: 0;
+    background: #ffffff;
+  }
+}

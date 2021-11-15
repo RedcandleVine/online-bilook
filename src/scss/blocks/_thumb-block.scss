@@ -1,0 +1,38 @@
+.thumb-block {
+  position: relative;
+  display: flex;
+  align-items: center;
+  
+     & a {
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  
+  
+  &__img {
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+  }
+  
+   &__name {
+     margin-bottom: 10px;
+     font-size: 18px;
+     line-height: 22px;
+    color: $white;
+     
+     .thumb-block:hover & {
+      text-decoration: underline;
+     }
+     
+  }
+  
+  
+  
+  &__category {
+    font-size: 14px;
+    color: $white;
+  }
+}

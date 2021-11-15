@@ -1,0 +1,10 @@
+.sort-list {
+  display: flex;
+  flex-wrap: wrap;
+  
+  &__item {
+    margin: 10px 0;
+    margin-right: 20px;
+    list-style-type: none;
+  }
+}

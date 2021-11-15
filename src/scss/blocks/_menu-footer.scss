@@ -1,0 +1,11 @@
+.menu-footer a {
+  color: $white;
+}
+
+.menu-footer__item {
+  margin-bottom: 20px;
+
+  & a:hover {
+    text-decoration: underline;
+  }
+}

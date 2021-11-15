@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    @include("templates/head.html")
+    <title>Концерт карточка - Bilook</title>
+</head>
+
+<body>
+    <div class="full">
+        @include("templates/header-inner.html")
+        <main class="page-main">
+            <div class="content-block">
+                @include("templates/left-sidebar.html")
+                <div class="center-content">
+                    <div class="breadcrumbs">
+                        <ul class="breadcrumbs-list">
+                            <li class="breadcrumbs-list__item"><a href="#">Главная</a>
+                            </li>
+                            <li class="breadcrumbs-list__item"><span>Личный кабинет</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="light-wrapper">
+                        <div class="inner-block">
+                            <div class="inner-title">
+                                Личный кабинет
+                            </div>
+                            <div class="personal-card">
+                                <div class="personal-card__item">
+                                    <div class="avatar avatar--big">
+                                        <img src="img/man.png" alt="">
+                                        <svg>
+                                            <circle class="outer" cx="65" cy="125" r="100" transform="rotate(-90, 95, 95)"></circle>
+                                            <defs>
+                                                <linearGradient id="grad2" x1="9.85452" y1="26.7208" x2="23.2808" y2="7.2656" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#DF0E77" />
+                                                    <stop offset="1" stop-color="#390796" />
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="personal-card__item">
+                                    <div class="personal-card__table" data-adaptiv="personal-card__item:nth-child(3), 0, 1400">
+                                        <div class="personal-card__table-row">
+                                            <div class="personal-card__table-name">
+                                                <span>Иван Иванов</span>
+                                            </div>
+                                        </div>
+                                        <div class="personal-card__table-row">
+                                            <div class="personal-card__table-stat">
+                                                <div class="stat">
+                                                    <a class="stat__item" href="#">
+                                                        <span class="stat__number">15</span>  <span>избранных</span>
+                                                    </a>
+                                                    <a class="stat__item" href="#">
+                                                        <span class="stat__number">23</span>  <span>посещения мероприятий</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="personal-card__table-row">
+                                            <div class="personal-card__data">
+                                                <span>Возраст:</span> 25
+                                            </div>
+                                        </div>
+                                        <div class="personal-card__table-row">
+                                            <div class="personal-card__data">
+                                                <span>Зарегистрирован:</span> 20 августа 2019
+                                            </div>
+                                        </div>
+                                        <div class="personal-card__table-row">
+                                            <a class="btn-border btn-border--white" href="#">
+                                                <span>Настроить</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="personal-card__item">
+                                    @include("templates/progress.html")
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lk-form">
+                        <div class="lk-form__item">
+                            <div class="lk-form__title">
+                                <span class="lk-form__title-number">1</span>
+                                <span class="lk-form__title-name">Личные данные</span>
+                            </div>
+                            <div class="lk-form__inner">
+                                <div class="lk-form__info">
+                                    Поддерживайте информацию о себе в актуальном состоянии и не беспокойтесь о ее безопасности. Ваши личные данные надежно защищаются в соответствии с <a href="#">«Регламентом защиты информации о пользователях».</a>
+                                </div>
+                                <form class="lk-form__form">
+                                    <fieldset>
+                                        <ul class="lk-form__list">
+                                            <li class="lk-form__list-item">
+                                                <div class="lk-form__input">
+                                                    <input type="text" placeholder="Иван Иванов">
+                                                    <svg>
+                                                        <use xlink:href="img/sprite.svg#icon-pencil"></use>
+                                                    </svg>
+                                                </div>
+                                            </li>
+                                            <li class="lk-form__list-item">
+                                                <div class="lk-form__input">
+                                                    <input type="date">
+                                                    <svg>
+                                                        <use xlink:href="img/sprite.svg#icon-pencil"></use>
+                                                    </svg>
+                                                </div>
+                                            </li>
+                                            <li class="lk-form__list-item">
+                                                <div class="lk-form__input">
+                                                    <select class="select-light">
+                                                        <option value="">Указать пол</option>
+                                                        <option value="">М</option>
+                                                        <option value="">Ж</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li class="lk-form__list-item">
+                                                <div class="lk-form__input">
+                                                    <select class="select-light">
+                                                        <option value="">Указать населенный пункт</option>
+                                                        <option value="">Москва</option>
+                                                        <option value="">Брянск</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="lk-form__item">
+                            <div class="lk-form__title">
+                                <span class="lk-form__title-number">2</span>
+                                <span class="lk-form__title-name">Адреса электронной почты</span>
+                            </div>
+                            <div class="lk-form__inner">
+                                <div class="lk-form__info">
+                                    Здесь перечислены все почты, которые вы указывали при использовании сервиса Bilook. Список почт также пополняется при привязке аккаунтов в социальных сетях. Вы можете добавить любое количество дополнительных почт для оперативного информирования вас о критичных действиях с вашим профилем.
+                                </div>
+                                <form class="lk-form__form">
+                                    <fieldset>
+                                        <ul class="lk-form__list">
+                                            <li class="lk-form__list-item">
+                                                <div class="lk-form__input">
+                                                    <input type="email" placeholder="info@mail.ru">
+                                                    <svg>
+                                                        <use xlink:href="img/sprite.svg#icon-pencil"></use>
+                                                    </svg>
+                                                </div>
+                                            </li>
+                                            <li class="lk-form__list-item">
+                                                <div class="lk-form__input lk-form__input--add">
+                                                    <input type="email" placeholder="Добавьте адрес электронной почты">
+                                                    <svg>
+                                                        <use xlink:href="img/sprite.svg#icon-cross"></use>
+                                                    </svg>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="lk-form__item">
+                            <div class="lk-form__title">
+                                <span class="lk-form__title-number">3</span>
+                                <span class="lk-form__title-name">Телефонные номера</span>
+                            </div>
+                            <div class="lk-form__inner">
+                                <div class="lk-form__info">
+                                    Здесь перечислены все почты, которые вы указывали при использовании сервиса Bilook. Список почт также пополняется при привязке аккаунтов в социальных сетях. Вы можете добавить любое количество дополнительных почт для оперативного информирования вас о критичных действиях с вашим профилем.
+                                </div>
+                                <form class="lk-form__form">
+                                    <fieldset>
+                                        <ul class="lk-form__list">
+                                            <li class="lk-form__list-item">
+                                                <div class="lk-form__input">
+                                                    <input type="tel" placeholder="+7 (000) 000-00-00">
+                                                    <svg>
+                                                        <use xlink:href="img/sprite.svg#icon-pencil"></use>
+                                                    </svg>
+                                                </div>
+                                            </li>
+                                            <li class="lk-form__list-item">
+                                                <div class="lk-form__input lk-form__input--add">
+                                                    <input type="tel" placeholder="Добавить телефонный номер">
+                                                    <svg>
+                                                        <use xlink:href="img/sprite.svg#icon-cross"></use>
+                                                    </svg>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="lk-form__item">
+                            <div class="lk-form__title">
+                                <span class="lk-form__title-number">4</span>
+                                <span class="lk-form__title-name">Социальные сети</span>
+                            </div>
+                            <div class="lk-form__inner">
+                                <div class="lk-form__info">
+                                    С помощью социальной сети, привязанной к профилю, вы можете авторизоваться в сервисе в один клик. Вы можете привязать к своему профилю несколько соцсетей.
+                                </div>
+                                <a class="btn-gradient" href="#">
+                                  Сохранить
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @include("templates/right-sidebar.html")
+            </div>
+        </main>
+        @include("templates/footer.html")
+        @include("templates/mmenu.html")
+    </div>
+    @include("templates/overlay.html")
+    @include("templates/regions.html")
+    @include("templates/form-reg.html")
+    @include("templates/scripts.html")
+</body>
+
+</html>

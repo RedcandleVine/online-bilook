@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    @include("templates/head.html")
+    <title>404 - Bilook</title>
+</head>
+
+<body>
+    <div class="full">
+        @include("templates/header-inner.html")
+        <main class="page-main">
+            <div class="not-exist">
+                <div class="not-exist__title">404</div>
+                <div class="not-exist__text">Страница не существует</div>
+                <a class="btn-gradient" href="#">
+                  На главную
+                </a>
+            </div>
+        </main>
+        @include("templates/footer.html")
+        @include("templates/mmenu.html")
+    </div>
+    @include("templates/overlay.html")
+    @include("templates/regions.html")
+    @include("templates/form-reg.html")
+    @include("templates/scripts.html")
+</body>
+
+</html>
+
+

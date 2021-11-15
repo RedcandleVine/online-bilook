@@ -1,0 +1,53 @@
+.catalog.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  grid-auto-flow: dense;
+}
+
+.catalog.line {
+  display: block;
+}
+
+
+.catalog.line .concerts-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: none;
+  padding: 20px 0;
+  border: none;
+  border-bottom: 1px solid #DEDEDE;
+  border-radius: 0;
+}
+
+.catalog.line .concerts-card__img {
+  width: 416px;
+}
+
+.catalog.line .concerts-card__info {
+  flex-grow: 1;
+}
+
+.catalog.line .favorite-action {
+  top: 30px;
+  left: 15px;
+  right: auto;
+}
+
+.catalog.line .concerts-card__price {
+    bottom: 20px;
+    left: 15px;
+}
+
+@media(max-width: 1000px) {
+  .catalog.line .concerts-card {
+    width: 100%;
+     max-width: 400px;
+    margin: 0 auto;
+  }
+
+ .catalog.line .concerts-card__table-row {
+    display: block;
+  }
+}

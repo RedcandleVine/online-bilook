@@ -1,0 +1,76 @@
+.regions {
+  height: 100%;
+  margin: auto;
+  padding: 37px 25px;
+  background: linear-gradient(179.84deg, #D95C9B 0.76%, #390796 99.1%);
+  border-radius: 10px;
+  z-index: 4000;
+  overflow: auto;
+
+  @media(max-width: 1000px) {
+    padding: 70px 5px;
+  }
+}
+
+.regions.open-modal {
+  display: block;
+}
+
+.bg {
+  padding: 10px 10px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.regions__desc {
+  display: block;
+  margin-top: 25px;
+  padding-bottom: 10px;
+  font-family: "Montserrat-Bold", "Arial", sans-serif;
+  border-bottom: 1px solid #eeeeee;
+}
+.regions .form-input {
+  padding: 10px 21px;
+  font-size: 12px;
+}
+.regions__wrapper {
+  width: 100%;
+  overflow: auto;
+}
+.regions-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: baseline;
+      align-content: baseline;
+  max-height: 500px;
+}
+.regions-list li {
+  margin-right: 20px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  list-style-type: none;
+  cursor: pointer;
+}
+.regions__wrapper .mCS-dark-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  width: 100%!important;
+}
+
+.literal-city {
+  font-weight: bold;
+  color: $pink;
+}
+
+.city-link {
+  transition: all 0.3s ease;
+}
+
+.city-link:hover {
+  color: $pink;
+}

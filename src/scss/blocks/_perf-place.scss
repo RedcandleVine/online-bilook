@@ -1,0 +1,35 @@
+.perf-place {
+    display: flex;
+    flex-wrap: wrap;
+    width: 55%;
+    font-family: $MBoldFont;
+    font-size: 16px;
+    line-height: 20px;
+    color: $dark;
+    & svg {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+    &__inner {
+        width: 85%;
+        & a {
+            display: block;
+            color: $dark;
+            & span {
+                display: block;
+                width: 100%;
+                font-family: $MFont;
+                font-size: 14px;
+                line-height: 20px;
+                color: $middle-grey;
+            }
+        }
+    }
+}
+
+@media(max-width: 1000px) {
+  .perf-place {
+    width: 100%;
+  }
+}

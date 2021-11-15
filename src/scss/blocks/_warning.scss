@@ -1,0 +1,16 @@
+.warning {
+  padding: 20px 0;
+  text-align: center;
+
+  &__wrapper {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+  }
+
+  & span {
+    color: #9C9C9C;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}

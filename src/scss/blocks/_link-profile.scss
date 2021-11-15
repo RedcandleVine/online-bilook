@@ -1,0 +1,11 @@
+.link-profile {
+
+  & a {
+    display: block;
+    padding: 18px 25px;
+  }
+
+  &:hover a {
+    color: $pink;
+  }
+}

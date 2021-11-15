@@ -1,0 +1,41 @@
+.author-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.author-list__item {
+  width: 33%;
+}
+
+.author-list__text,
+.author-list__link {
+  color: $white;
+}
+
+.author-list__link {
+  display: block;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.author-list__link:hover {
+  text-decoration: none;
+}
+
+.author-list p {
+  margin-bottom: 0;
+  color: $white;
+}
+
+@media(max-width: 1000px) {
+  .author-list__item {
+  width: 100%;
+    margin-bottom: 15px;
+}
+
+  .author-list__link {
+    text-align: left;
+}
+}

@@ -1,0 +1,42 @@
+.datepicker-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 0;
+  padding-top: 10px;
+}
+
+.datepicker-wrapper .inner-block {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.datepicker-inline .datepicker {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+.datepicker {
+    width: 330px;
+}
+
+.datepicker--cell.-current- {
+    color: $pink;
+}
+
+.datepicker--cell.-selected-,
+.datepicker--cell.-selected-.-current- {
+    background: $pink;
+}
+
+
+.datepicker--day-name {
+    color: #4a4a4a;
+}
+
+

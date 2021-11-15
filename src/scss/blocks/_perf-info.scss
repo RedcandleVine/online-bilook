@@ -1,0 +1,35 @@
+.perf-info {
+  display: flex;
+  align-items: flex-start;
+  font-family: $MSemibold;
+  font-size: 16px;
+  line-height: 22px;
+  color: $dark;
+
+   & svg {
+     width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+}
+
+.perf-info a {
+  position: relative;
+  color: #D95C9B;
+}
+
+.perf-info a:hover {
+    text-decoration: underline;
+}
+
+
+.perf-info__name {
+
+margin-right: 10px;
+}
+
+@media(max-width: 1000px) {
+  .perf-info {
+   flex-wrap: wrap;
+  }
+}

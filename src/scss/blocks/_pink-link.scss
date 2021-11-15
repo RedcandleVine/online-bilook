@@ -1,0 +1,10 @@
+.pink-link {
+  font-family: $MSemibold;
+  font-size: 14px;
+  line-height: 25px;
+  color: $pink;
+  
+  &:hover {
+    color: $dark;
+  }
+}

@@ -1,0 +1,66 @@
+.timing-table {
+    width: 100%;
+    padding: 20px;
+    padding-top: 15px;
+    background-color: $white;
+    border-radius: 10px;
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 35px 0;
+        border-bottom: 1px solid #eeeeee;
+        &:last-child {
+            padding-top: 20px;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+    }
+    &__name {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        line-height: 12px;
+        color: $middle-grey;
+        text-transform: uppercase;
+        &-img {
+            margin-right: 25px;
+        }
+    }
+    &__source {
+        display: block;
+        & a {
+            font-family: $MBoldFont;
+            font-size: 16px;
+            line-height: 22px;
+            color: $pink;
+        }
+        &:hover a {
+            color: $dark;
+        }
+    }
+    &__category {
+        font-family: $MSemibold;
+        font-size: 12px;
+        line-height: 35px;
+        color: $pink;
+    }
+    &__name-title {
+        & a {
+            font-family: $MBoldFont;
+            font-size: 16px;
+            line-height: 22px;
+            color: $pink;
+            text-transform: none;
+        }
+      &:hover a {
+        color: $dark;
+      }
+    }
+}
+
+.timing-table__row-item {
+  margin: 5px 0;
+  padding: 0 5px;
+}

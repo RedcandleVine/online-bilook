@@ -1,0 +1,18 @@
+.section {
+  padding-top: 70px;
+  padding-bottom: 100px;
+  
+  &--events {
+  background-color: $dark-grey;
+}
+  
+  &--events .main-title {
+   margin-bottom: -20px;
+  }
+  
+  &--dark {
+    background-color: $dark-grey;
+  }
+  
+}
+

@@ -1,0 +1,68 @@
+.perf-date {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-family: $MSemibold;
+  font-size: 16px;
+  line-height: 22px;
+  color: $dark;
+  text-transform: uppercase;
+
+  &__item {
+    display: inline-block;
+    margin: 5px 20px;
+     text-transform: none;
+  }
+
+  &-day {
+    margin-left: 0;
+    text-transform: uppercase;
+  }
+
+  &-clock {
+    position: relative;
+    color: $pink;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: -23px;
+      width: 4px;
+      height: 4px;
+      background-color: $violet;
+      border-radius: 100%;
+    }
+  }
+
+  &-time {
+    position: relative;
+    color: $middle-grey;
+    &::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: -23px;
+    width: 4px;
+    height: 4px;
+    background-color: $violet;
+    border-radius: 100%;
+    }
+  }
+
+  & svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+
+  &-another {
+   color: $pink;
+  }
+}
+
+@media(max-width: 600px) {
+  .perf-date-day {
+    width: 100%;
+}
+}

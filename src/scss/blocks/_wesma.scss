@@ -1,0 +1,18 @@
+.wesma {
+  color: $white;
+  text-align: right;
+}
+
+.wesma__link-tagline a {
+  color: $white;
+}
+
+.wesma__link-tagline a:hover {
+  text-decoration: underline;
+}
+
+@media(max-width: 1000px) {
+.wesma {
+  text-align: left;
+}
+}

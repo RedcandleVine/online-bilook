@@ -1,0 +1,27 @@
+.close-btn {
+  position: absolute;
+  top: 0;
+  right: -50px;
+  z-index: 5000;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: url(../img/close.png);
+  background-size: 100%;
+  background-position: center 3%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  
+}
+.close-btn:hover {
+   opacity: 0.6;
+}
+
+@media(max-width: 1000px) { 
+  .close-btn {
+  top: 20px;
+  right: 20px;
+  }
+}

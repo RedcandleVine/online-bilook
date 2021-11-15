@@ -1,0 +1,8 @@
+.slider-events-wrapper {
+  position: relative;
+  margin-bottom: 90px;
+  padding-left: 145px;
+  @media(max-width: 1400px) {
+    padding-left: 0;
+  }
+}

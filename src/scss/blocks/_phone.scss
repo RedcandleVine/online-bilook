@@ -1,0 +1,23 @@
+.phone {
+  margin-bottom: 20px;
+}
+
+.phone svg {
+  width: 15px;
+  height: 15px;
+  fill: $white;
+}
+
+.phone__link {
+  position: relative;
+  color: $white;
+  font-family: $MBoldFont;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  @media(max-width: 1320px) {
+    font-size: 12px;
+  }
+}

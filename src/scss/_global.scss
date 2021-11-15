@@ -1,0 +1,144 @@
+body {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 320px;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 16px;
+    color: $dark;
+    font-family: $MFont;
+    background-color: #F8F8F8;
+    &.open-modal {
+        overflow-y: hidden;
+    }
+}
+.full {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.wrapper {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 10px;
+    @media(max-width: 1300px) {
+        max-width: 1600px;
+    }
+}
+.main-title,
+h1 {
+    margin-bottom: 80px;
+    font-family: $MSemibold;
+    font-size: 30px;
+    line-height: 40px;
+    text-transform: uppercase;
+    @media(max-width: 1000px) {
+        margin-bottom: 30px;
+    }
+}
+.main-title--light {
+    color: $white;
+}
+.main-title--center {
+    text-align: center;
+}
+h2,
+.title-h2 {
+    font-family: $MFont;
+    font-size: 48px;
+    line-height: 30px;
+}
+h3,
+.title-h3 {
+    font-family: $MFont;
+    font-size: 48px;
+    line-height: 30px;
+}
+h4,
+.title-h4 {
+    font-family: $MFont;
+    font-size: 48px;
+    line-height: 30px;
+}
+h5,
+.title-h5 {
+    font-family: $MFont;
+    font-size: 48px;
+    line-height: 30px;
+}
+h6,
+.title-h6 {
+    font-family: $MFont;
+    font-size: 48px;
+    line-height: 30px;
+}
+p {
+    margin: 20px 0;
+    margin-top: 0;
+    font-family: $MSemibold;
+    font-size: 16px;
+    line-height: 25px;
+    color: $dark;
+}
+a {
+    position: relative;
+    color: $dark;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+a:focus,
+a:hover {
+    text-decoration: none;
+}
+ul li {
+    list-style-type: none;
+}
+.mCSB_draggerContainer {
+    margin-top: 0!important;
+    margin-bottom: 5px!important;
+}
+.mCS-dark-thick.mCSB_scrollTools .mCSB_draggerRail {
+    background-color: #F0F0F0!important;
+    border-radius: 0!important;
+}
+.mCS-dark-thick.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    width: 4px!important;
+    background-color: $pink!important;
+    border-radius: 15px!important;
+}
+.mCSB_buttonUp,
+.mCSB_buttonDown {
+    display: none!important;
+}
+.icon-svg-gradient {
+    fill: transparent;
+    stroke: url(#grad1);
+    stroke-width: 1px;
+}
+.icon-svg-fill {
+    fill: url(#grad1);
+}
+
+.icon-svg-color {
+  fill: $pink;
+}
+
+
+.text[data-readmore]{display: block; width: 100%;}
+.text[data-readmore]{transition: height 100ms;overflow: hidden;}

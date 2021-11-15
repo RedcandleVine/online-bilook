@@ -1,0 +1,85 @@
+.lk-form__item {
+    margin-bottom: 30px;
+    padding: 30px;
+    background-color: #ffffff;
+}
+.lk-form__title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    font-family: $MBoldFont;
+    border-bottom: 2px solid #F5F5F5;
+}
+.lk-form__title-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+    padding: 11px 0;
+    font-size: 30px;
+    text-align: center;
+    border: 1px solid #D95C9B;
+    border-radius: 100%;
+}
+.lk-form__title-name {
+    width: 80%;
+    font-size: 30px;
+    line-height: 33px;
+}
+.lk-form__info {
+    margin-bottom: 30px;
+    color: $dark;
+    font-size: 15px;
+    line-height: 25px;
+}
+.lk-form__info a {
+    color: $pink;
+    text-decoration: underline;
+}
+
+.lk-form__info a:hover {
+    text-decoration: none;
+}
+
+.lk-form__list-item {
+    height: 70px;
+    margin-bottom: 30px;
+}
+.lk-form__input {
+    position: relative;
+    width: 100%;
+    max-width: 780px;
+}
+.lk-form__input input {
+    width: 100%;
+    padding: 25px 40px;
+    color: #9C9C9C;
+    border: 1px solid #F8F8F8;
+    border-radius: 100px;
+}
+.lk-form__input svg {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    width: 20px;
+    height: 20px;
+    fill: $pink;
+}
+.lk-form__input--add {
+    fill: transparent;
+    stroke: $pink;
+    stroke-width: 2px;
+}
+input[type=date]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+@media(max-width: 600px) {
+    .lk-form__title-number {
+        width: 50px;
+        height: 50px;
+        font-size: 22px;
+    }
+}

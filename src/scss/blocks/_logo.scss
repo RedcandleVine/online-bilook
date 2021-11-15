@@ -1,0 +1,14 @@
+.logo {
+  text-align: center;
+
+  & a:hover img {
+    opacity: 0.8;
+  }
+
+  @media(max-width: 1000px) {
+    width: auto;
+    max-width: 140px;
+    margin: 0 auto;
+  }
+
+}

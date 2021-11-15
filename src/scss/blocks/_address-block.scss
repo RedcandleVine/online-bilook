@@ -1,0 +1,68 @@
+.address-block {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 10px;
+
+  &__info {
+    width: 32%;
+    padding: 40px 30px;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+    font-size: 24px;
+    line-height: 1.2;
+    color: $pink;
+  }
+
+  &__place {
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 25px;
+    color: $pink;
+  }
+
+  &__list {
+
+    &-item {
+      display: flex;
+      align-items: center;
+      padding: 15px 0;
+      border-top: 1px solid #eeeeee;
+      list-style-type: none;
+
+      &:hover a {
+        color: $pink;
+      }
+
+      &:last-child {
+        border-bottom: 1px solid #eeeeee;
+      }
+
+      & svg {
+        width: 20px;
+        height: 20px;
+        margin-right: 20px;
+        fill: $pink;
+      }
+    }
+  }
+
+  &__map {
+    width: 70%;
+    border-radius: 10px;
+  }
+}
+
+@media(max-width: 1000px) {
+  .address-block {
+    flex-wrap: wrap;
+}
+
+  .address-block__info {
+    width: 100%;
+  }
+   .address-block__map {
+    width: 100%;
+  }
+}

@@ -1,0 +1,15 @@
+.price {  
+  display: flex;
+  align-items: center;
+  font-family: $MBoldFont;
+  font-size: 16px;
+  line-height: 22px;
+  color: $white;
+
+  & svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    fill: $pink;
+  }
+}

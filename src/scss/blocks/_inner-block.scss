@@ -1,0 +1,12 @@
+.inner-block {
+  margin-bottom: 40px;
+
+  @media(max-width: 1200px) {
+    padding: 0 15px;
+  }
+
+
+  @media(max-width: 1000px) {
+    padding: 0 5px;
+  }
+}

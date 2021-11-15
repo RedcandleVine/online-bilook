@@ -1,0 +1,12 @@
+.counter {
+  font-family: $MBoldFont;
+  font-size: 14px;
+  line-height: 35px;
+  color: $dark;
+}
+
+@media(max-width: 1000px) {
+  .counter {
+    display: none;
+  }
+}

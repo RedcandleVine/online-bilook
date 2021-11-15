@@ -1,0 +1,9 @@
+.center-content {
+  position: relative;
+  grid-column: span 16;
+  border-radius: 10px;
+
+  @media(max-width: 1200px) {
+    grid-column: span 24;
+  }
+}

@@ -1,0 +1,19 @@
+.location {
+    & a {
+        display: block;
+        font-family: $MBoldFont;
+        color: $dark;
+        & span {
+            display: block;
+            width: 100%;
+            font-family: $MFont;
+            font-size: 14px;
+            line-height: 20px;
+            color: $middle-grey;
+        }
+    }
+  
+  &:hover a span {
+    color: $pink;
+  }
+}

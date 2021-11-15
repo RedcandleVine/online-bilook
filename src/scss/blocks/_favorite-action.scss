@@ -1,0 +1,52 @@
+.favorite-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all .5s ease;
+  
+ & svg {
+    width: 23px;
+    height: 21px;
+    fill: transparent;
+    stroke: $white;
+    stroke-width: 25px;
+  }
+  
+  &.liked {
+    background-color: #ffffff;
+    border-color: #F0F0F0;
+		animation: shadow-grow 2s;
+    
+    svg {
+      fill: $pink;
+      stroke: transparent;
+      animation: heart-grow 0.5s;
+    }
+  }
+  
+  &:hover {
+    svg {
+      stroke: $pink;
+    }
+  }
+  
+  .events-card & {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    z-index: 4;
+  }
+  
+  .concerts-card & {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 5;
+  }
+  
+}

@@ -1,0 +1,30 @@
+.block-grey {
+  background-color: #F8F8F8;
+  border-radius: 100px;
+
+  .block-grey-wrapper & {  
+    font-family: $MSemibold;
+    text-align: center;
+}
+  
+  &--square {
+    display: flex;
+    align-items: center;
+    font-family: $MSemibold;
+    border-radius: 10px;
+  }
+  
+  & svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+  & a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+}

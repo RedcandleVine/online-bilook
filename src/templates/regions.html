@@ -1,0 +1,688 @@
+<div class="modal modal--regions" id="regions">
+    <div class="regions">
+        <div class="bg">
+            <button href="#" class="close-btn js-modal-close" type="button"></button>
+            <input class="form-input" id="city-input" type="text" placeholder="Начните вводить название города">
+            <p class="regions__desc">Или выберите город из списка</p>
+            <div class="regions__wrapper">
+                <ul class="regions-list" id="cities">
+                    <li class="literal-city">А</li>
+                    <li>
+                        <span class="city-link" data-domain="abakan" data-region="KK">Абакан</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="almetevsk" data-region="TA">Альметьевск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="angarsk" data-region="IRK">Ангарск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="aprelevka" data-region="MOS">Апрелевка</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="arzamas" data-region="NIZ">Арзамас</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="armavir" data-region="KYA">Армавир</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="artem" data-region="PRI">Артем</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="arhangelsk" data-region="AST">Архангельск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="astrahan" data-region="AST">Астрахань</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="achinsk" data-region="KYA">Ачинск</span>
+                    </li>
+                    <li class="literal-city">Б</li>
+                    <li>
+                        <span class="city-link" data-domain="balakovo" data-region="SAR">Балаково</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="balashiha" data-region="MOS">Балашиха</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="barnaul" data-region="ALT">Барнаул</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="bataisk" data-region="ROS">Батайск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="belgorod" data-region="BEL">Белгород</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="berdsk" data-region="NVS">Бердск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="berezniki" data-region="PER">Березники</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="biysk" data-region="ALT">Бийск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="blagoveschensk" data-region="AMU">Благовещенск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="bratsk" data-region="IRK">Братск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="bronnitsy" data-region="MOS">Бронницы</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="bryansk" data-region="BRY">Брянск</span>
+                    </li>
+                    <li class="literal-city">В</li>
+                    <li>
+                        <span class="city-link" data-domain="velikij-novgorod" data-region="NGR">Великий Новгород</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="vidnoe" data-region="MOS">Видное</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="vladivostok" data-region="PRI">Владивосток</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="vladikavkaz" data-region="SE">Владикавказ</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="vladimir" data-region="VLA">Владимир</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="vlasiha" data-region="MOS">Власиха</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="volgograd" data-region="VGG">Волгоград</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="volgodonsk" data-region="ROS">Волгодонск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="volzhskij" data-region="VGG">Волжский</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="vologda" data-region="VLG">Вологда</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="volokolamsk" data-region="MOS">Волоколамск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="voronezh" data-region="VOR">Воронеж</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="voskresensk" data-region="MOS">Воскресенск</span>
+                    </li>
+                    <li class="literal-city">Г</li>
+                    <li>
+                        <span class="city-link" data-domain="groznyj" data-region="CE">Грозный</span>
+                    </li>
+                    <li class="literal-city">Д</li>
+                    <li>
+                        <span class="city-link" data-domain="dedovsk" data-region="MOS">Дедовск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="derbent" data-region="DA">Дербент</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="dzerzhinsk" data-region="NIZ">Дзержинск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="dzerzhinskij" data-region="MOS">Дзержинский</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="dimitrovgrad" data-region="ULY">Димитровград</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="dmitrov" data-region="MOS">Дмитров</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="dolgoprudnyj" data-region="MOS">Долгопрудный</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="domodedovo" data-region="MOS">Домодедово</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="dubna" data-region="MOS">Дубна</span>
+                    </li>
+                    <li class="literal-city">Е</li>
+                    <li>
+                        <span class="city-link" data-domain="evpatoriya" data-region="43[6]">Евпатория</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="egorevsk" data-region="MOS">Егорьевск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="ekaterinburg" data-region="SVE">Екатеринбург</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="elec" data-region="LIP">Елец</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="essentuki" data-region="STA">Ессентуки</span>
+                    </li>
+                    <li class="literal-city">Ж</li>
+                    <li>
+                        <span class="city-link" data-domain="zhukovsky" data-region="MOS">Жуковский</span>
+                    </li>
+                    <li class="literal-city">З</li>
+                    <li>
+                        <span class="city-link" data-domain="zarajsk" data-region="MOS">Зарайск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="zvenigorod" data-region="MOS">Звенигород</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="zlatoust" data-region="CHE">Златоуст</span>
+                    </li>
+                    <li class="literal-city">И</li>
+                    <li>
+                        <span class="city-link" data-domain="ivanovo" data-region="MOS">Иваново</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="ivanteevka" data-region="MOS">Ивантеевка</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="izhevsk" data-region="UD">Ижевск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="irkutsk" data-region="IRK">Иркутск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="istra" data-region="MOS">Истра</span>
+                    </li>
+                    <li class="literal-city">Й</li>
+                    <li>
+                        <span class="city-link" data-domain="yoshkar-ola" data-region="ME">Йошкар-Ола</span>
+                    </li>
+                    <li class="literal-city">К</li>
+                    <li>
+                        <span class="city-link" data-domain="kazan" data-region="TA">Казань</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="kaliningrad" data-region="KGD">Калининград</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="kaluga" data-region="KLU">Калуга</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="kamensk-uralsky" data-region="SVE">Каменск-Уральский</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="kamyshin" data-region="VGG">Камышин</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="kaspiysk" data-region="DA">Каспийск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="kashira" data-region="MOS">Кашира</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="kemerovo" data-region="KEM">Кемерово</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="kerch" data-region="43[6]">Керчь</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="kirov" data-region="KIR">Киров</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="kislovodsk" data-region="STA">Кисловодск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="klin" data-region="MOS">Клин</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="kovrov" data-region="VLA">Ковров</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="kolomna" data-region="MOS">Коломна</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="komsomolsk-na-amure" data-region="KHA">Комсомольск-на-Амуре</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="kopeisk" data-region="CHE">Копейск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="korolev" data-region="MOS">Королев</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="kostroma" data-region="KOS">Кострома</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="kotelniki" data-region="MOS">Котельники</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="krasnoarmejsk" data-region="MOS">Красноармейск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="krasnogorsk" data-region="MOS">Красногорск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="krasnodar" data-region="KDA">Краснодар</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="krasnoznamensk" data-region="MOS">Краснознаменск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="krasnoyarsk" data-region="KYA">Красноярск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="kubinka" data-region="MOS">Кубинка</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="kurgan" data-region="KGN">Курган</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="kurovskoe" data-region="MOS">Куровское</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="kursk" data-region="KRS">Курск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="kyzyl" data-region="TY">Кызыл</span>
+                    </li>
+                    <li class="literal-city">Л</li>
+                    <li>
+                        <span class="city-link" data-domain="likino-dulevo" data-region="MOS">Ликино-Дулево</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="lipetsk" data-region="LIP">Липецк</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="lobnya" data-region="MOS">Лобня</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="losino-petrovskij" data-region="MOS">Лосино-Петровский</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="luhovitsy" data-region="MOS">Луховицы</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="lytkarino" data-region="MOS">Лыткарино</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="lyubertsy" data-region="MOS">Люберцы</span>
+                    </li>
+                    <li class="literal-city">М</li>
+                    <li>
+                        <span class="city-link" data-domain="magnitogorsk" data-region="CHE">Магнитогорск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="maikop" data-region="AD">Майкоп</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="malahovka" data-region="MOS">Малаховка</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="mahachkala" data-region="DA">Махачкала</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="miass" data-region="CHE">Миасс</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="mozhajsk" data-region="MOS">Можайск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="moscow" data-region="MOW">Москва</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="murmansk" data-region="MUR">Мурманск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="murom" data-region="MUR">Муром</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="mytischi" data-region="MOS">Мытищи</span>
+                    </li>
+                    <li class="literal-city">Н</li>
+                    <li>
+                        <span class="city-link" data-domain="naberezhnye-chelny" data-region="TA">Набережные Челны</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="nazran" data-region="IN">Назрань</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="nalchik" data-region="KB">Нальчик</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="naro-fominsk" data-region="MOS">Наро-Фоминск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="nahodka" data-region="PRI">Находка</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="nevinnomyssk" data-region="STA">Невинномысск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="neftekamsk" data-region="BA">Нефтекамск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="nefteyugansk" data-region="KHM">Нефтеюганск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="nizhnevartovsk" data-region="KHM">Нижневартовск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="nizhnekamsk" data-region="TA">Нижнекамск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="nizhnij-novgorod" data-region="NIZ">Нижний Новгород</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="nizhny-tagil" data-region="SVE">Нижний Тагил</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="novokuznetsk" data-region="KEM">Новокузнецк</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="novokujbyshevsk" data-region="SAM">Новокуйбышевск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="novomoskovsk" data-region="TUL">Новомосковск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="novorossisk" data-region="KDA">Новороссийск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="novosibirsk" data-region="NVS">Новосибирск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="novocheboksarsk" data-region="CU">Новочебоксарск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="novocherkassk" data-region="ROS">Новочеркасск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="novoshahtinsk" data-region="ROS">Новошахтинск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="novy-urengoy" data-region="YAN">Новый Уренгой</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="noginsk" data-region="MOS">Ногинск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="norilsk" data-region="KYA">Норильск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="noyabrsk" data-region="YAN">Ноябрьск</span>
+                    </li>
+                    <li class="literal-city">О</li>
+                    <li>
+                        <span class="city-link" data-domain="obninsk" data-region="KLU">Обнинск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="odintsovo" data-region="MOS">Одинцово</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="ozery" data-region="MOS">Озеры</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="oktyabrsky" data-region="ARK">Октябрьский</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="omsk" data-region="OMS">Омск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="orel" data-region="ORL">Орел</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="orenburg" data-region="ORE">Оренбург</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="orehovo-zuevo" data-region="MOS">Орехово-Зуево</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="orsk" data-region="ORE">Орск</span>
+                    </li>
+                    <li class="literal-city">П</li>
+                    <li>
+                        <span class="city-link" data-domain="pavlovskij-posad" data-region="MOS">Павловский Посад</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="penza" data-region="PNZ">Пенза</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="pervouralsk" data-region="SVE">Первоуральск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="perm" data-region="PER">Пермь</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="petrozavodsk" data-region="KR">Петрозаводск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="petropavlovsk-kamchatsky" data-region="KAM">Петропавловск-Камчатский</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="podolsk" data-region="MOS">Подольск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="prokopevsk" data-region="KEM">Прокопьевск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="protvino" data-region="MOS">Протвино</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="pskov" data-region="PSK">Псков</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="pushkino" data-region="MOS">Пушкино</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="puschino" data-region="MOS">Пущино</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="pyatigorsk" data-region="STA">Пятигорск</span>
+                    </li>
+                    <li class="literal-city">Р</li>
+                    <li>
+                        <span class="city-link" data-domain="ramenskoe" data-region="MOS">Раменское</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="reutov" data-region="MOS">Реутов</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="rostov-na-donu" data-region="ROS">Ростов-на-Дону</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="roshal" data-region="MOS">Рошаль</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="rubtsovsk" data-region="ALT">Рубцовск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="rybinsk" data-region="YAR">Рыбинск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="ryazan" data-region="RYA">Рязань</span>
+                    </li>
+                    <li class="literal-city">С</li>
+                    <li>
+                        <span class="city-link" data-domain="salavat" data-region="BA">Салават</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="samara" data-region="SAM">Самара</span>
+                    </li>
+                    <li class="active">
+                        <span class="city-link" data-domain="sankt-peterburg" data-region="SPE">Санкт-Петербург</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="saransk" data-region="MO">Саранск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="saratov" data-region="SAR">Саратов</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="sevastopol" data-region="43[6]">Севастополь</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="severodvinsk" data-region="ARK">Северодвинск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="seversk" data-region="TOM">Северск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="sergiev-posad" data-region="MOS">Сергиев Посад</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="serpuhov" data-region="MOS">Серпухов</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="simferopol" data-region="43[6]">Симферополь</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="smolensk" data-region="SMO">Смоленск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="solnechnogorsk" data-region="MOS">Солнечногорск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="sochi" data-region="KDA">Сочи</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="stavropol" data-region="STA">Ставрополь</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="staraya-kupavna" data-region="MOS">Старая Купавна</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="stary-oskol" data-region="BEL">Старый Оскол</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="sterlitamak" data-region="BA">Стерлитамак</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="stupino" data-region="MOS">Ступино</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="surgut" data-region="KHM">Сургут</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="syzran" data-region="SAM">Сызрань</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="syktyvkar" data-region="KO">Сыктывкар</span>
+                    </li>
+                    <li class="literal-city">Т</li>
+                    <li>
+                        <span class="city-link" data-domain="taganrog" data-region="ROS">Таганрог</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="tambov" data-region="TAM">Тамбов</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="tver" data-region="TVE">Тверь</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="tolyatti" data-region="SAM">Тольятти</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="tomsk" data-region="TOM">Томск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="tula" data-region="TUL">Тула</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="tyumen" data-region="TYU">Тюмень</span>
+                    </li>
+                    <li class="literal-city">У</li>
+                    <li>
+                        <span class="city-link" data-domain="ulan-ude" data-region="BU">Улан-Удэ</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="ulyanovsk" data-region="ULY">Ульяновск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="ussuriysk" data-region="PRI">Уссурийск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="ufa" data-region="BA">Уфа</span>
+                    </li>
+                    <li class="literal-city">Ф</li>
+                    <li>
+                        <span class="city-link" data-domain="fryazino" data-region="MOS">Фрязино</span>
+                    </li>
+                    <li class="literal-city">Х</li>
+                    <li>
+                        <span class="city-link" data-domain="habarovsk" data-region="KHA">Хабаровск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="hasavyurt" data-region="DA">Хасавюрт</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="himki" data-region="MOS">Химки</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="hotkovo" data-region="MOS">Хотьково</span>
+                    </li>
+                    <li class="literal-city">Ч</li>
+                    <li>
+                        <span class="city-link" data-domain="cheboksary" data-region="CU">Чебоксары</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="chelyabinsk" data-region="CHE">Челябинск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="cherepovec" data-region="VLG">Череповец</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="cherkessk" data-region="KC">Черкесск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="chernogolovka" data-region="MOS">Черноголовка</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="chehov" data-region="MOS">Чехов</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="chita" data-region="ZAB">Чита</span>
+                    </li>
+                    <li class="literal-city">Ш</li>
+                    <li>
+                        <span class="city-link" data-domain="shatura" data-region="MOS">Шатура</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="shahty" data-region="ROS">Шахты</span>
+                    </li>
+                    <li class="literal-city">Щ</li>
+                    <li>
+                        <span class="city-link" data-domain="schelkovo" data-region="MOS">Щелково</span>
+                    </li>
+                    <li class="literal-city">Э</li>
+                    <li>
+                        <span class="city-link" data-domain="elektrogorsk" data-region="MOS">Электрогорск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="elektrostal" data-region="MOS">Электросталь</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="elektrougli" data-region="MOS">Электроугли</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="elista" data-region="KL">Элиста</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="engels" data-region="SAR">Энгельс</span>
+                    </li>
+                    <li class="literal-city">Ю</li>
+                    <li>
+                        <span class="city-link" data-domain="yuzhno-sahalinsk" data-region="SAK">Южно-Сахалинск</span>
+                    </li>
+                    <li class="literal-city">Я</li>
+                    <li>
+                        <span class="city-link" data-domain="yakutsk" data-region="SA">Якутск</span>
+                    </li>
+                    <li>
+                        <span class="city-link" data-domain="yaroslavl" data-region="YAR">Ярославль</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+

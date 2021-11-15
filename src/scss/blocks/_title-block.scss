@@ -1,0 +1,36 @@
+.title-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+
+  @media(max-width: 600px) {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 20px
+
+  }
+
+  &__btn {
+    margin-left: 50px;
+  }
+
+  & .main-title,
+  & .inner-title {
+    margin-bottom: 0;
+  }
+}
+
+@media(max-width: 1000px) {
+  .title-block__btn {
+    margin-left: 0;
+}
+}

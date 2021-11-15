@@ -1,0 +1,69 @@
+.date-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.date-list__item {
+  margin: 0 20px;
+}
+
+.date-list__btn {
+  position: relative;
+  display: inline-block;
+  max-width: 235px;
+  padding: 2px;
+  background-color: transparent;
+}
+
+.date-list__btn {
+  font-size: 14px;
+  line-height: 1.2;
+  border-radius: 100px;
+}
+
+.date-list__btn span {
+  display: inline-block;
+  padding: 18px 38px;
+  color: #292929;
+  background-color: #F8F8F8;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.date-list__btn span:hover {
+  color: $pink;
+}
+
+.date-list__btn.active {
+  background: linear-gradient(97.22deg, #D95C9B 7.13%, #390796 95%);
+}
+
+@media(max-width: 1000px) {
+  .date-list {
+    justify-content: center;
+  }
+}
+
+@media(max-width: 800px) {
+ .arrow-slider--date {
+  position: relative;
+  top: 0;
+  bottom: auto;
+  margin: 0;
+  margin-bottom: 20px;
+  transform: translateY(0);
+}
+
+   .date-list {
+    justify-content: flex-start;
+  }
+
+  .date-list__item {
+  margin: 0 10px;
+}
+
+  .date-list__btn span {
+    padding: 15px 25px;
+  }
+}
