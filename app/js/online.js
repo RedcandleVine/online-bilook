@@ -41,17 +41,21 @@ document.addEventListener(
                     breakpoints: {
                         // when window width is <= 480px
                         1550: {
-                        slidesPerView: 4,
+                        slidesPerView: 5,
                         spaceBetween: 20
                         },
                         900: {
-                        slidesPerView: 3,
+                        slidesPerView: 4,
                         spaceBetween: 20
                         },
                         700: {
-                        slidesPerView: 2,
+                        slidesPerView: 3,
                         spaceBetween: 20
                         },
+                        450: {
+                            slidesPerView: 2,
+                            spaceBetween: 20
+                            },
                         // when window width is <= 320px
                         300: {
                         slidesPerView: 1,
@@ -73,14 +77,14 @@ $(document).ready(function () {
     if ($(window).width() > 1200) {
         $(".search-box__item").css({width: `${$(".header__menu").innerWidth() + $(".search-box").innerWidth()}`})
     } else {
-        $(".search-box__item").css({width: initial});
+        $(".search-box__item").css({width: "initial"});
     }
 
     $(window).on("resize", function() {
         if ($(window).width() > 1200) {
             $(".search-box__item").css({width: `${$(".header__menu").innerWidth() + $(".search-box").innerWidth()}`})
         } else {
-            $(".search-box__item").css({width: initial});
+            $(".search-box__item").css({width: "initial"});
         }
     });
 
@@ -96,6 +100,32 @@ $(document).ready(function () {
         $(this).addClass("--hidden");
         $(".search-box__item").slideDown();
     });
+
+    if ($(".online-crew__list-item").length > 7) {
+        $(".online-crew__list").append("<a class='online-crew__more'><span>Ещё</span></a>");
+
+        $.each($(".online-crew__list-item"), function(index, val) {
+            if (index > 6) {
+                $(val).css({display: "none"});
+            }
+        });
+
+        $(".online-crew__more").on("click", function(e) {
+            e.preventDefault();
+            let button = $(this);
+            $.each($(".online-crew__list-item"), function(index, val) {
+                if (index > 6) {
+                    if ($(val).is(":hidden")) {
+                        $(val).fadeIn();
+                        button.find("span").text("Скрыть");
+                    } else {
+                        $(val).fadeOut();
+                        button.find("span").text("Еще");
+                    }
+                }
+            });
+        });
+    }
 
 
     // let gallerySliders = Array.prototype.slice.call(document.querySelectorAll(".main-galery"));

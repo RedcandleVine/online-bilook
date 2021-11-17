@@ -132,7 +132,9 @@ const watchFiles = () => {
 	watch('./src/img/**.jpg', imgToApp);
 	watch('./src/img/**.png', imgToApp);
 	watch('./src/img/**.jpeg', imgToApp);
+
 	watch('./src/img/**.svg', svgSprites);
+	watch('./src/img/**.svg', imgToApp);
 	watch('./src/resources/**', resources);
 	watch('./src/fonts/**.ttf', fonts);
 	watch('./src/fonts/**.ttf', fontsStyle);
