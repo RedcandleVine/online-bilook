@@ -127,6 +127,67 @@ $(document).ready(function () {
         });
     }
 
+    $(".cinema-text").readmore({
+        moreLink: '<button class="spoiler-text btn-border btn-border--white"><svg viewBox="0 0 200 50"><rect x="1" y="0" fill="none" rx="25" ry="25" width="98%" height="100%"></rect></svg><span>Показать еще</span></button>',
+        lessLink: '<button class="spoiler-text btn-border btn-border--white"><svg viewBox="0 0 200 50"><rect x="1" y="0" fill="none" rx="25" ry="25" width="98%" height="100%"></rect></svg><span>Свернуть</span></button>',
+        collapsedHeight: 200,
+        speed: 100,
+      
+        afterToggle: function (trigger, element, expanded) {
+          if ($(element).hasClass("readmore-js-collapsed")) {
+            $(element).removeClass("readmore-js-collapsed");
+          } else {
+            $(element).addClass("readmore-js-collapsed");
+          }
+        },
+      });
+
+
+    $(".online-review__review").readmore({
+        moreLink: '<button class="online-review__button-more"><span>Читать полностью...</span></button>',
+        lessLink: '<button class="online-review__button-more"><span>Скрыть</span></button>',
+        collapsedHeight: 80,
+        speed: 100,
+      
+        afterToggle: function (trigger, element, expanded) {
+          if ($(element).hasClass("readmore-js-collapsed")) {
+            $(element).removeClass("readmore-js-collapsed");
+          } else {
+            $(element).addClass("readmore-js-collapsed");
+          }
+        },
+      });
+
+    if ($(".online-review__item").length > 3) {
+        $(".online-review__block").append("<div class='online-review__more-block'><div class='online-review__more'><span>показать еще</span></div></div>");
+
+        $.each($(".online-review__item"), function(index, val) {
+
+            if (index > 2) {
+                $(val).css({display: "none"});
+            }
+        });
+
+        $(".online-review__more-block").on("click", function(e) {
+            e.preventDefault();
+            let button = $(this);
+            $.each($(".online-review__item"), function(index, val) {
+                if (index > 2) {
+                    if ($(val).is(":hidden")) {
+                        $(val).fadeIn();
+                        button.find("span").text("Скрыть");
+                    } else {
+                        $(val).fadeOut();
+                        button.find("span").text("Показать еще");
+                    }
+                }
+            });
+
+        });
+
+    }
+
+
 
     // let gallerySliders = Array.prototype.slice.call(document.querySelectorAll(".main-galery"));
 
