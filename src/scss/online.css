@@ -690,7 +690,7 @@
 .online-cinema__title:before {
 	position: absolute;
 	content: "";
-	top: 50%;
+	top: 56%;
 	transform: translate(-50%, -50%);
 	right: -40px;
 	background-image: url("../../img/arrow-more.png");
@@ -1281,6 +1281,7 @@
 	.cinema-header .page-header__item:nth-child(3) {
 		width: 100%;
 		display: block;
+		padding-bottom: 6px;
 	}
 
 	.search-box__show-block {
@@ -2449,14 +2450,164 @@
 	}
 }
 
-@media (max-width: 400px) {
-	/* .online-cinema-wrapper .trigger-filter, 
-    .online-cinema-wrapper .nice-select {
-        padding-right: 50px;
-        padding-left: 10px;
-    }
+/* online mobile menu */
 
-    .online-sort__custom-new span {
-        padding: 14px 30px;
-    } */
+.online__mmenu-navigation {
+	position: fixed;
+	top: -100%;
+	left: 0;
+	background: #fff;
+	z-index: 4000;
+	transition: all 0.3s ease;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+.online__mmenu-navigation.open {
+	top: 100px;
+}
+
+.online__mmenu-item {
+	padding-left: 10px;
+	padding-right: 10px;
+	border-bottom: 1px solid #f5f5f5;
+}
+
+.online__mmenu-item:last-child {
+	border-bottom: none;
+}
+
+.online__mmenu-item a {
+	padding: 15px 20px;
+}
+
+.online__mmenu-item.current {
+	background-color: #df0e77;
+}
+
+.online__mmenu-item.current a {
+	color: #fff;
+}
+
+.online__mmenu a::before {
+	content: "";
+	position: absolute;
+	top: 18px;
+	left: 0;
+	width: 7px;
+	height: 7px;
+	background-color: #df0e77;
+	border-radius: 100%;
+}
+
+.online__mmenu .online__mmenu-item.current a::before {
+	background-color: #ffffff;
+}
+
+@media (max-width: 1350px) {
+	.online__mmenu-item {
+		padding-left: 20px;
+	}
+}
+
+.online__mobile-wrapper {
+	position: relative;
+}
+
+.online__mmenu-sub-list {
+	padding: 0px 20px 0px 20px;
+}
+
+.online__mmenu-wrap {
+	display: none;
+
+	opacity: 0;
+	visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 100%;
+	padding: 15px 0;
+	min-width: 200px;
+	min-height: 100%;
+	width: 100%;
+	transition: all 0.3s ease;
+	z-index: 100;
+
+	background: #ffffff;
+}
+
+.online__mmenu-wrap.open {
+	opacity: 1;
+	visibility: visible;
+	left: 0;
+}
+
+.online__mmenu-item-group {
+	position: relative;
+}
+
+.online__mmenu-sub-link {
+	display: block;
+	transition: all 0.3s ease;
+}
+
+.online__mmenu-sub-item {
+	white-space: nowrap;
+}
+
+.online__mmenu-open-sub {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	transform: translate(0, -50%);
+	width: 30px;
+	height: 30px;
+}
+
+.online__mmenu-open-sub:before {
+	position: absolute;
+	content: "";
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-image: url(../../img/arrow-more.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 7px;
+	height: 10px;
+	transition: all 0.3s ease;
+}
+
+.online__mmenu-close-sub {
+	cursor: pointer;
+	display: block;
+	position: relative;
+	margin: 20px 0 10px 25px;
+	padding-left: 20px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #444;
+}
+
+.online__mmenu-close-sub:before {
+	position: absolute;
+	content: "";
+	top: 50%;
+	left: 0;
+	transform: translate(0, -50%) rotate(180deg);
+	background-image: url(../../img/arrow-more.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 7px;
+	height: 10px;
+}
+
+@media (max-width: 500px) {
+	.mobile-menu-top.online__mmenu-navigation.open-menu {
+		top: 85px;
+
+		height: calc(100vh - 85px);
+	}
 }
