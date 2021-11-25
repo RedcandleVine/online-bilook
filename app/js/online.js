@@ -66,6 +66,23 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 $(document).ready(function () {
+	$(".online__mmenu-open-sub").on("click", function (e) {
+		e.preventDefault();
+		$(this).parents(".online__mmenu-item").find(".online__mmenu-wrap").css({ display: "block" });
+		setTimeout(() => {
+			$(this).parents(".online__mmenu-item").find(".online__mmenu-wrap").addClass("open");
+		}, 0);
+	});
+
+	$(".online__mmenu-close-sub").on("click", function (e) {
+		e.preventDefault();
+		$(this).parents(".online__mmenu-item").find(".online__mmenu-wrap").removeClass("open");
+
+		setTimeout(() => {
+			$(this).parents(".online__mmenu-item").find(".online__mmenu-wrap").css({ display: "none" });
+		}, 300);
+	});
+
 	$(".cinema-header__switch").on("click", function (e) {
 		e.preventDefault();
 		if ($(this).hasClass("--white")) {
@@ -152,21 +169,6 @@ $(document).ready(function () {
 		},
 	});
 
-	// $(".online-review__review").readmore({
-	//     moreLink: '<button class="online-review__button-more"><span>Читать полностью...</span></button>',
-	//     lessLink: '<button class="online-review__button-more"><span>Скрыть</span></button>',
-	//     collapsedHeight: 80,
-	//     speed: 100,
-
-	//     afterToggle: function (trigger, element, expanded) {
-	//       if ($(element).hasClass("readmore-js-collapsed")) {
-	//         $(element).removeClass("readmore-js-collapsed");
-	//       } else {
-	//         $(element).addClass("readmore-js-collapsed");
-	//       }
-	//     },
-	//   });
-
 	$.each($(".online-review__item"), function (index, val) {
 		let elTextWrap = $(val).find(".online-review__review-text");
 		let elTextAll = elTextWrap.text();
@@ -221,37 +223,6 @@ $(document).ready(function () {
 			});
 		});
 	}
-
-	// let gallerySliders = Array.prototype.slice.call(document.querySelectorAll(".main-galery"));
-
-	// if (gallerySliders.length > 0) {
-	//     gallerySliders.forEach((element) => {
-	//         let slidesGallery = element.querySelectorAll(".main-galery__list-item");
-
-	//         let slidesPer = "auto";
-	//         let initSlide = 1;
-	//         let centerSlide = true;
-	//         let sliderLoop = true;
-
-	//         let sliderMainGalery = new Swiper(element.querySelector(".main-galery-slider"), {
-	//             slidesPerView: slidesPer,
-	//             spaceBetween: 15,
-	//             centeredSlides: centerSlide,
-	//             initialSlide: initSlide,
-	//             loop: sliderLoop,
-	//             watchOverflow: true,
-
-	//             navigation: {
-	//                 nextEl: element.querySelector(".main-galery__next"),
-	//                 prevEl: element.querySelector(".main-galery__prev"),
-	//             },
-	//             pagination: {
-	//                 el: element.querySelector(".main-galery__pagination"),
-	//                 clickable: true,
-	//             },
-	//         });
-	//     });
-	// }
 });
 
 //# sourceMappingURL=online.js.map
