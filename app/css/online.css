@@ -298,7 +298,7 @@
 .header__menu-item:active .animate-link:after {
   position: absolute;
   content: "";
-  bottom: -48px;
+  bottom: -51px;
   left: 0;
   height: 2px;
   width: 100%;
@@ -394,7 +394,7 @@
   visibility: visible;
   width: 55px;
   height: 55px;
-  background-image: url(../../img/search-icon.png);
+  background-image: url(../img/search-icon.png);
   background-size: 27px;
   background-position: center;
   background-repeat: no-repeat;
@@ -693,7 +693,7 @@
   top: 56%;
   transform: translate(-50%, -50%);
   right: -40px;
-  background-image: url("../../img/arrow-more.png");
+  background-image: url("../img/arrow-more.png");
   background-repeat: no-repeat;
   background-size: contain;
   width: 15px;
@@ -708,7 +708,7 @@
 
 .online-cinema__title:hover:before,
 .online-cinema__title:active:before {
-  background: url("../../img/arrow-more-pink.png") no-repeat;
+  background: url("../img/arrow-more-pink.png") no-repeat;
   right: -50px;
   background-size: contain;
   width: 15px;
@@ -1149,10 +1149,10 @@
   .cinema-header .page-header__item:nth-child(3) {
     width: 20%;
   }
-  .header__menu-item:hover .animate-link:after,
-  .header__menu-item:active .animate-link:after {
-    bottom: -38px;
-  }
+  /* .header__menu-item:hover .animate-link:after,
+	.header__menu-item:active .animate-link:after {
+		bottom: -43px;
+	} */
   .header__menu-wrap {
     padding-top: 39px;
   }
@@ -2264,7 +2264,7 @@
   top: 50%;
   transform: translate(50%, -50%);
   left: 0;
-  background: url(../../img/icon-default.png) no-repeat;
+  background: url(../img/icon-default.png) no-repeat;
   background-size: contain;
   width: 6px;
   height: 6px;
@@ -2484,7 +2484,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-image: url(../../img/arrow-more.png);
+  background-image: url(../img/arrow-more.png);
   background-repeat: no-repeat;
   background-size: contain;
   width: 7px;
@@ -2509,7 +2509,7 @@
   top: 50%;
   left: 0;
   transform: translate(0, -50%) rotate(180deg);
-  background-image: url(../../img/arrow-more.png);
+  background-image: url(../img/arrow-more.png);
   background-repeat: no-repeat;
   background-size: contain;
   width: 7px;
@@ -2520,6 +2520,28 @@
   .mobile-menu-top.online__mmenu-navigation.open-menu {
     top: 85px;
     height: calc(100vh - 85px);
+  }
+}
+
+.page-navigation__title h1 {
+  color: #333;
+  text-transform: initial;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.25;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1170px) {
+  .page-navigation__title h1 {
+    font-size: calc(25px + 15 * ((100vw - 320px) / 1170));
+  }
+}
+
+@media (max-width: 500px) {
+  .page-navigation__title h1 {
+    margin-bottom: 10px;
   }
 }
 

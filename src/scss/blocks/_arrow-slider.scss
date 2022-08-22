@@ -5,28 +5,34 @@
     width: 200px;
     height: 35px;
 }
+
 .arrow-slider .swiper-button-prev,
 .arrow-slider .swiper-button-next {
     position: relative;
     width: 80px;
     height: 35px;
     background-color: transparent;
-    background-image: url("../../img/arrows.png");
+    background-image: url("../img/arrows.png");
     background-size: 170px;
     background-repeat: no-repeat;
 }
+
 .swiper-button-prev {
     background-position: 0% 88%;
+
     &:hover {
         background-position: 0% 44%;
     }
 }
+
 .swiper-button-next {
     background-position: 100% 88%;
+
     &:hover {
         background-position: 100% 44%;
     }
 }
+
 .arrow-slider--main {
     & .swiper-button-prev {
         opacity: 0;
@@ -35,6 +41,7 @@
         animation-delay: 0.5s;
         animation-fill-mode: forwards;
     }
+
     & .swiper-button-next {
         opacity: 0;
         animation-name: fadeLeft;
@@ -43,71 +50,91 @@
         animation-fill-mode: forwards;
     }
 }
+
 .arrow-slider--video {
     .swiper-button-prev {
         background-position: 0% -1%;
+
         &:hover {
             background-position: 0% 44%;
         }
     }
+
     .swiper-button-next {
         background-position: 100% -1%;
+
         &:hover {
             background-position: 100% 44%;
         }
     }
 }
+
 .arrow-slider--gallery {
     .swiper-button-prev {
         background-position: 0% -1%;
+
         &:hover {
             background-position: 0% 44%;
         }
     }
+
     .swiper-button-next {
         background-position: 100% -1%;
+
         &:hover {
             background-position: 100% 44%;
         }
     }
 }
+
 .arrow-slider--similar {
     .swiper-button-prev {
         background-position: 0% -1%;
+
         &:hover {
             background-position: 0% 44%;
         }
     }
+
     .swiper-button-next {
         background-position: 100% -1%;
+
         &:hover {
             background-position: 100% 44%;
         }
     }
 }
+
 .arrow-slider--seen {
     .swiper-button-prev {
         background-position: 0% -1%;
+
         &:hover {
             background-position: 0% 44%;
         }
     }
+
     .swiper-button-next {
         background-position: 100% -1%;
+
         &:hover {
             background-position: 100% 44%;
         }
     }
 }
+
 .arrow-slider--combined {
     .swiper-button-prev {
         background-position: 0% -1%;
+
         &:hover {
             background-position: 0% 44%;
         }
     }
+
     .swiper-button-next {
         background-position: 100% -1%;
+
         &:hover {
             background-position: 100% 44%;
         }
@@ -117,12 +144,15 @@
 .arrow-slider--date {
     .swiper-button-prev {
         background-position: 0% -1%;
+
         &:hover {
             background-position: 0% 44%;
         }
     }
+
     .swiper-button-next {
         background-position: 100% -1%;
+
         &:hover {
             background-position: 100% 44%;
         }
@@ -130,11 +160,11 @@
 }
 
 .arrow-slider--date {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  margin: auto;
-  transform: translateY(-45px);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: auto;
+    transform: translateY(-45px);
 }
